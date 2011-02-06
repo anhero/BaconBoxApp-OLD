@@ -18,6 +18,9 @@
 		5112772B12FF1DA4008EAB02 /* RedBoxAppAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5112772412FF1DA4008EAB02 /* RedBoxAppAppDelegate.m */; };
 		5112772C12FF1DA4008EAB02 /* RedBoxAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5112772612FF1DA4008EAB02 /* RedBoxAppViewController.m */; };
 		5112773212FF1DD3008EAB02 /* Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5112772F12FF1DD3008EAB02 /* Loader.cpp */; };
+		5115512412FF54A8003E656A /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5112771912FF1DA4008EAB02 /* MainWindow.xib */; };
+		5115512912FF54AA003E656A /* RedBoxAppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5112771B12FF1DA4008EAB02 /* RedBoxAppViewController.xib */; };
+		5115512A12FF54B9003E656A /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5112771E12FF1DA4008EAB02 /* MainWindow-iPad.xib */; };
 		515EB58412FF3C50004FB469 /* libRedBox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 515EB55412FF3C12004FB469 /* libRedBox.a */; };
 /* End PBXBuildFile section */
 
@@ -125,8 +128,8 @@
 				5112771612FF1DA4008EAB02 /* EAGLView.m */,
 				5112771712FF1DA4008EAB02 /* InfoPlist.strings */,
 				5112771912FF1DA4008EAB02 /* MainWindow.xib */,
+				5112771E12FF1DA4008EAB02 /* MainWindow-iPad.xib */,
 				5112771B12FF1DA4008EAB02 /* RedBoxAppViewController.xib */,
-				5112771D12FF1DA4008EAB02 /* iPad */,
 				5112772012FF1DA4008EAB02 /* main.m */,
 				5112772112FF1DA4008EAB02 /* RedBoxApp-Info.plist */,
 				5112772212FF1DA4008EAB02 /* RedBoxApp-Prefix.pch */,
@@ -137,14 +140,6 @@
 			);
 			path = xcode_specific;
 			sourceTree = SOURCE_ROOT;
-		};
-		5112771D12FF1DA4008EAB02 /* iPad */ = {
-			isa = PBXGroup;
-			children = (
-				5112771E12FF1DA4008EAB02 /* MainWindow-iPad.xib */,
-			);
-			path = iPad;
-			sourceTree = "<group>";
 		};
 		5112772D12FF1DD3008EAB02 /* application */ = {
 			isa = PBXGroup;
@@ -275,6 +270,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5112772A12FF1DA4008EAB02 /* RedBoxApp-Info.plist in Resources */,
+				5115512912FF54AA003E656A /* RedBoxAppViewController.xib in Resources */,
+				5115512A12FF54B9003E656A /* MainWindow-iPad.xib in Resources */,
+				5115512412FF54A8003E656A /* MainWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +324,7 @@
 				5112771F12FF1DA4008EAB02 /* en */,
 			);
 			name = "MainWindow-iPad.xib";
+			path = iPad;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
