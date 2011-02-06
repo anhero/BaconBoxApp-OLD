@@ -1,0 +1,340 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		511276D212FF02FE008EAB02 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 511276D112FF02FE008EAB02 /* UIKit.framework */; };
+		511276D412FF02FE008EAB02 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 511276D312FF02FE008EAB02 /* Foundation.framework */; };
+		511276D612FF02FE008EAB02 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 511276D512FF02FE008EAB02 /* CoreGraphics.framework */; };
+		511276D812FF02FE008EAB02 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 511276D712FF02FE008EAB02 /* QuartzCore.framework */; };
+		511276DA12FF02FE008EAB02 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 511276D912FF02FE008EAB02 /* OpenGLES.framework */; };
+		5112772812FF1DA4008EAB02 /* EAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5112771612FF1DA4008EAB02 /* EAGLView.m */; };
+		5112772912FF1DA4008EAB02 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5112772012FF1DA4008EAB02 /* main.m */; };
+		5112772A12FF1DA4008EAB02 /* RedBoxApp-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5112772112FF1DA4008EAB02 /* RedBoxApp-Info.plist */; };
+		5112772B12FF1DA4008EAB02 /* RedBoxAppAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5112772412FF1DA4008EAB02 /* RedBoxAppAppDelegate.m */; };
+		5112772C12FF1DA4008EAB02 /* RedBoxAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5112772612FF1DA4008EAB02 /* RedBoxAppViewController.m */; };
+		5112773212FF1DD3008EAB02 /* Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5112772F12FF1DD3008EAB02 /* Loader.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		511276CD12FF02FE008EAB02 /* RedBoxApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedBoxApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		511276D112FF02FE008EAB02 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		511276D312FF02FE008EAB02 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		511276D512FF02FE008EAB02 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		511276D712FF02FE008EAB02 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		511276D912FF02FE008EAB02 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		5112771512FF1DA4008EAB02 /* EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
+		5112771612FF1DA4008EAB02 /* EAGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAGLView.m; sourceTree = "<group>"; };
+		5112771812FF1DA4008EAB02 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5112771A12FF1DA4008EAB02 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		5112771C12FF1DA4008EAB02 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = en; path = en.lproj/RedBoxAppViewController.xib; sourceTree = "<group>"; };
+		5112771F12FF1DA4008EAB02 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = en; path = "en.lproj/MainWindow-iPad.xib"; sourceTree = "<group>"; };
+		5112772012FF1DA4008EAB02 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5112772112FF1DA4008EAB02 /* RedBoxApp-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "RedBoxApp-Info.plist"; sourceTree = "<group>"; };
+		5112772212FF1DA4008EAB02 /* RedBoxApp-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RedBoxApp-Prefix.pch"; sourceTree = "<group>"; };
+		5112772312FF1DA4008EAB02 /* RedBoxAppAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedBoxAppAppDelegate.h; sourceTree = "<group>"; };
+		5112772412FF1DA4008EAB02 /* RedBoxAppAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedBoxAppAppDelegate.m; sourceTree = "<group>"; };
+		5112772512FF1DA4008EAB02 /* RedBoxAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedBoxAppViewController.h; sourceTree = "<group>"; };
+		5112772612FF1DA4008EAB02 /* RedBoxAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedBoxAppViewController.m; sourceTree = "<group>"; };
+		5112772F12FF1DD3008EAB02 /* Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Loader.cpp; sourceTree = "<group>"; };
+		5112773012FF1DD3008EAB02 /* Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Loader.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		511276CA12FF02FD008EAB02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				511276D212FF02FE008EAB02 /* UIKit.framework in Frameworks */,
+				511276D412FF02FE008EAB02 /* Foundation.framework in Frameworks */,
+				511276D612FF02FE008EAB02 /* CoreGraphics.framework in Frameworks */,
+				511276D812FF02FE008EAB02 /* QuartzCore.framework in Frameworks */,
+				511276DA12FF02FE008EAB02 /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		511276C212FF02FD008EAB02 = {
+			isa = PBXGroup;
+			children = (
+				5112772D12FF1DD3008EAB02 /* application */,
+				5112773312FF1DF3008EAB02 /* libraries */,
+				5112771412FF1DA4008EAB02 /* xcode_specific */,
+				511276D012FF02FE008EAB02 /* Frameworks */,
+				511276CE12FF02FE008EAB02 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		511276CE12FF02FE008EAB02 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				511276CD12FF02FE008EAB02 /* RedBoxApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		511276D012FF02FE008EAB02 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				511276D112FF02FE008EAB02 /* UIKit.framework */,
+				511276D312FF02FE008EAB02 /* Foundation.framework */,
+				511276D512FF02FE008EAB02 /* CoreGraphics.framework */,
+				511276D712FF02FE008EAB02 /* QuartzCore.framework */,
+				511276D912FF02FE008EAB02 /* OpenGLES.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5112771412FF1DA4008EAB02 /* xcode_specific */ = {
+			isa = PBXGroup;
+			children = (
+				5112771512FF1DA4008EAB02 /* EAGLView.h */,
+				5112771612FF1DA4008EAB02 /* EAGLView.m */,
+				5112771712FF1DA4008EAB02 /* InfoPlist.strings */,
+				5112771912FF1DA4008EAB02 /* MainWindow.xib */,
+				5112771B12FF1DA4008EAB02 /* RedBoxAppViewController.xib */,
+				5112771D12FF1DA4008EAB02 /* iPad */,
+				5112772012FF1DA4008EAB02 /* main.m */,
+				5112772112FF1DA4008EAB02 /* RedBoxApp-Info.plist */,
+				5112772212FF1DA4008EAB02 /* RedBoxApp-Prefix.pch */,
+				5112772312FF1DA4008EAB02 /* RedBoxAppAppDelegate.h */,
+				5112772412FF1DA4008EAB02 /* RedBoxAppAppDelegate.m */,
+				5112772512FF1DA4008EAB02 /* RedBoxAppViewController.h */,
+				5112772612FF1DA4008EAB02 /* RedBoxAppViewController.m */,
+			);
+			path = xcode_specific;
+			sourceTree = SOURCE_ROOT;
+		};
+		5112771D12FF1DA4008EAB02 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				5112771E12FF1DA4008EAB02 /* MainWindow-iPad.xib */,
+			);
+			path = iPad;
+			sourceTree = "<group>";
+		};
+		5112772D12FF1DD3008EAB02 /* application */ = {
+			isa = PBXGroup;
+			children = (
+				5112772F12FF1DD3008EAB02 /* Loader.cpp */,
+				5112773012FF1DD3008EAB02 /* Loader.h */,
+			);
+			name = application;
+			path = ../../application;
+			sourceTree = "<group>";
+		};
+		5112773312FF1DF3008EAB02 /* libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = libraries;
+			path = ../../libraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		511276CC12FF02FD008EAB02 /* RedBoxApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 511276F912FF02FE008EAB02 /* Build configuration list for PBXNativeTarget "RedBoxApp" */;
+			buildPhases = (
+				511276C912FF02FD008EAB02 /* Sources */,
+				511276CA12FF02FD008EAB02 /* Frameworks */,
+				511276CB12FF02FD008EAB02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RedBoxApp;
+			productName = RedBoxApp;
+			productReference = 511276CD12FF02FE008EAB02 /* RedBoxApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		511276C412FF02FD008EAB02 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Anhero Inc.";
+			};
+			buildConfigurationList = 511276C712FF02FD008EAB02 /* Build configuration list for PBXProject "RedBoxApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 511276C212FF02FD008EAB02;
+			productRefGroup = 511276CE12FF02FE008EAB02 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				511276CC12FF02FD008EAB02 /* RedBoxApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		511276CB12FF02FD008EAB02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5112772A12FF1DA4008EAB02 /* RedBoxApp-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		511276C912FF02FD008EAB02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5112772812FF1DA4008EAB02 /* EAGLView.m in Sources */,
+				5112772912FF1DA4008EAB02 /* main.m in Sources */,
+				5112772B12FF1DA4008EAB02 /* RedBoxAppAppDelegate.m in Sources */,
+				5112772C12FF1DA4008EAB02 /* RedBoxAppViewController.m in Sources */,
+				5112773212FF1DD3008EAB02 /* Loader.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5112771712FF1DA4008EAB02 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5112771812FF1DA4008EAB02 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5112771912FF1DA4008EAB02 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5112771A12FF1DA4008EAB02 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		5112771B12FF1DA4008EAB02 /* RedBoxAppViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5112771C12FF1DA4008EAB02 /* en */,
+			);
+			name = RedBoxAppViewController.xib;
+			sourceTree = "<group>";
+		};
+		5112771E12FF1DA4008EAB02 /* MainWindow-iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5112771F12FF1DA4008EAB02 /* en */,
+			);
+			name = "MainWindow-iPad.xib";
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		511276F712FF02FE008EAB02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COMPRESS_PNG_FILES = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		511276F812FF02FE008EAB02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COMPRESS_PNG_FILES = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		511276FA12FF02FE008EAB02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RedBoxApp/RedBoxApp-Prefix.pch";
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				INFOPLIST_FILE = "RedBoxApp/RedBoxApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		511276FB12FF02FE008EAB02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RedBoxApp/RedBoxApp-Prefix.pch";
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				INFOPLIST_FILE = "RedBoxApp/RedBoxApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		511276C712FF02FD008EAB02 /* Build configuration list for PBXProject "RedBoxApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				511276F712FF02FE008EAB02 /* Debug */,
+				511276F812FF02FE008EAB02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		511276F912FF02FE008EAB02 /* Build configuration list for PBXNativeTarget "RedBoxApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				511276FA12FF02FE008EAB02 /* Debug */,
+				511276FB12FF02FE008EAB02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 511276C412FF02FD008EAB02 /* Project object */;
+}
