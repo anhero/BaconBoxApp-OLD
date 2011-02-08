@@ -90,10 +90,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		510C25CA13019BF100CFE26E /* resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = resources;
+			path = ../../resources;
+			sourceTree = "<group>";
+		};
 		511276C212FF02FD008EAB02 = {
 			isa = PBXGroup;
 			children = (
 				5112772D12FF1DD3008EAB02 /* application */,
+				510C25CA13019BF100CFE26E /* resources */,
 				5112773312FF1DF3008EAB02 /* libraries */,
 				5112771412FF1DA4008EAB02 /* xcode_specific */,
 				511276D012FF02FE008EAB02 /* Frameworks */,
