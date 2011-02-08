@@ -1,13 +1,16 @@
 #ifndef __LOADER_H
 #define __LOADER_H
-#include "State.h"
-namespace RedBox {
 
+#include "RedBoxEngine.h"
+#include "State.h"
+
+namespace RedBox {
 	class Loader  {
 	public:
-		Loader();
-	private:
-		State * firstState;
+		static void load(){
+			//Setup and add your first state here
+			RedBoxEngine::addState(new State());
+		}
 	};
 }
 #endif

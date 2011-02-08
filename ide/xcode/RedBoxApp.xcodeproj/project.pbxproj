@@ -18,7 +18,6 @@
 		5112772A12FF1DA4008EAB02 /* RedBoxApp-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5112772112FF1DA4008EAB02 /* RedBoxApp-Info.plist */; };
 		5112772B12FF1DA4008EAB02 /* RedBoxAppAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5112772412FF1DA4008EAB02 /* RedBoxAppAppDelegate.m */; };
 		5112772C12FF1DA4008EAB02 /* RedBoxAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5112772612FF1DA4008EAB02 /* RedBoxAppViewController.m */; };
-		5112773212FF1DD3008EAB02 /* Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5112772F12FF1DD3008EAB02 /* Loader.cpp */; };
 		5115512412FF54A8003E656A /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5112771912FF1DA4008EAB02 /* MainWindow.xib */; };
 		5115512912FF54AA003E656A /* RedBoxAppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5112771B12FF1DA4008EAB02 /* RedBoxAppViewController.xib */; };
 		5115512A12FF54B9003E656A /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5112771E12FF1DA4008EAB02 /* MainWindow-iPad.xib */; };
@@ -79,7 +78,6 @@
 		5112772412FF1DA4008EAB02 /* RedBoxAppAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedBoxAppAppDelegate.m; sourceTree = "<group>"; };
 		5112772512FF1DA4008EAB02 /* RedBoxAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedBoxAppViewController.h; sourceTree = "<group>"; };
 		5112772612FF1DA4008EAB02 /* RedBoxAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedBoxAppViewController.m; sourceTree = "<group>"; };
-		5112772F12FF1DD3008EAB02 /* Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Loader.cpp; sourceTree = "<group>"; };
 		5112773012FF1DD3008EAB02 /* Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Loader.h; sourceTree = "<group>"; };
 		5112773A12FF2011008EAB02 /* RedBox.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RedBox.xcodeproj; path = redbox/ide/Xcode/RedBox.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -168,7 +166,6 @@
 		5112772D12FF1DD3008EAB02 /* application */ = {
 			isa = PBXGroup;
 			children = (
-				5112772F12FF1DD3008EAB02 /* Loader.cpp */,
 				5112773012FF1DD3008EAB02 /* Loader.h */,
 			);
 			name = application;
@@ -312,7 +309,6 @@
 				5112772912FF1DA4008EAB02 /* main.m in Sources */,
 				5112772B12FF1DA4008EAB02 /* RedBoxAppAppDelegate.m in Sources */,
 				5112772C12FF1DA4008EAB02 /* RedBoxAppViewController.m in Sources */,
-				5112773212FF1DD3008EAB02 /* Loader.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
