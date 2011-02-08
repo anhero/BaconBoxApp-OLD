@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		510C25DA13019C7D00CFE26E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 510C25D913019C7D00CFE26E /* libz.dylib */; };
 		511276D212FF02FE008EAB02 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 511276D112FF02FE008EAB02 /* UIKit.framework */; };
 		511276D412FF02FE008EAB02 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 511276D312FF02FE008EAB02 /* Foundation.framework */; };
 		511276D612FF02FE008EAB02 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 511276D512FF02FE008EAB02 /* CoreGraphics.framework */; };
@@ -21,10 +22,19 @@
 		5115512412FF54A8003E656A /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5112771912FF1DA4008EAB02 /* MainWindow.xib */; };
 		5115512912FF54AA003E656A /* RedBoxAppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5112771B12FF1DA4008EAB02 /* RedBoxAppViewController.xib */; };
 		5115512A12FF54B9003E656A /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5112771E12FF1DA4008EAB02 /* MainWindow-iPad.xib */; };
-		515EB58412FF3C50004FB469 /* libRedBox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 515EB55412FF3C12004FB469 /* libRedBox.a */; };
+		51578C811301BEAA009862CE /* liblibpng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 515EB55612FF3C12004FB469 /* liblibpng.a */; };
+		51578C821301BEAB009862CE /* libRedBox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 515EB55412FF3C12004FB469 /* libRedBox.a */; };
+		51578C831301BEAB009862CE /* libsimple-image.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 515EB55812FF3C12004FB469 /* libsimple-image.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		510C261913019E9500CFE26E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5112773A12FF2011008EAB02 /* RedBox.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5192774611D5B0F100C65B15;
+			remoteInfo = RedBox;
+		};
 		515EB55312FF3C12004FB469 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5112773A12FF2011008EAB02 /* RedBox.xcodeproj */;
@@ -49,6 +59,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		510C25D913019C7D00CFE26E /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		511276CD12FF02FE008EAB02 /* RedBoxApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedBoxApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		511276D112FF02FE008EAB02 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		511276D312FF02FE008EAB02 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -78,12 +89,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				515EB58412FF3C50004FB469 /* libRedBox.a in Frameworks */,
+				510C25DA13019C7D00CFE26E /* libz.dylib in Frameworks */,
 				511276D212FF02FE008EAB02 /* UIKit.framework in Frameworks */,
 				511276D412FF02FE008EAB02 /* Foundation.framework in Frameworks */,
 				511276D612FF02FE008EAB02 /* CoreGraphics.framework in Frameworks */,
 				511276D812FF02FE008EAB02 /* QuartzCore.framework in Frameworks */,
 				511276DA12FF02FE008EAB02 /* OpenGLES.framework in Frameworks */,
+				51578C811301BEAA009862CE /* liblibpng.a in Frameworks */,
+				51578C821301BEAB009862CE /* libRedBox.a in Frameworks */,
+				51578C831301BEAB009862CE /* libsimple-image.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +135,7 @@
 		511276D012FF02FE008EAB02 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				510C25D913019C7D00CFE26E /* libz.dylib */,
 				511276D112FF02FE008EAB02 /* UIKit.framework */,
 				511276D312FF02FE008EAB02 /* Foundation.framework */,
 				511276D512FF02FE008EAB02 /* CoreGraphics.framework */,
@@ -212,6 +227,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				510C261A13019E9500CFE26E /* PBXTargetDependency */,
 			);
 			name = RedBoxApp;
 			productName = RedBoxApp;
@@ -301,6 +317,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		510C261A13019E9500CFE26E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RedBox;
+			targetProxy = 510C261913019E9500CFE26E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5112771712FF1DA4008EAB02 /* InfoPlist.strings */ = {
