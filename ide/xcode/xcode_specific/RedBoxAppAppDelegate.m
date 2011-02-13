@@ -3,7 +3,8 @@
 #import "EAGLView.h"
 
 #import "RedBoxAppViewController.h"
-
+#include "Loader.h"
+#include "RedBoxEngine.h"
 @implementation RedBoxAppAppDelegate
 
 
@@ -15,6 +16,9 @@
 {
 	// Override point for customization after application launch.
 	self.window.rootViewController = self.viewController;
+	RedBox::Loader::load();
+	RedBox::RedBoxEngine::initializeEngine([UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
+
     return YES;
 }
 

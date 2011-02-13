@@ -3,7 +3,7 @@
 #import "RedBoxAppViewController.h"
 #import "EAGLView.h"
 #include "RedBoxEngine.h"
-#include "Loader.h"
+
 
 @interface RedBoxAppViewController ()
 @property (nonatomic, retain) EAGLContext *context;
@@ -33,7 +33,6 @@
     animating = FALSE;
     animationFrameInterval = 1;
     self.displayLink = nil;
-	RedBox::Loader::load();
 }
 
 - (void)dealloc
