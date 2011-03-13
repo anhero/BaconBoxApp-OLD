@@ -99,7 +99,6 @@
 		511276C212FF02FD008EAB02 = {
 			isa = PBXGroup;
 			children = (
-				51C96A58132D459000A9B088 /* OpenAL.framework */,
 				5112772D12FF1DD3008EAB02 /* application */,
 				510C25CA13019BF100CFE26E /* resources */,
 				5112773312FF1DF3008EAB02 /* libraries */,
@@ -120,6 +119,7 @@
 		511276D012FF02FE008EAB02 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				51C96A58132D459000A9B088 /* OpenAL.framework */,
 				510C25D913019C7D00CFE26E /* libz.dylib */,
 				51C96A56132D457100A9B088 /* OpenAL.framework */,
 				511276D112FF02FE008EAB02 /* UIKit.framework */,
