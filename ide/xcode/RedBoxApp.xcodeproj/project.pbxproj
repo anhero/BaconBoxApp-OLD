@@ -21,9 +21,8 @@
 		5115512412FF54A8003E656A /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5112771912FF1DA4008EAB02 /* MainWindow.xib */; };
 		5115512912FF54AA003E656A /* RedBoxAppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5112771B12FF1DA4008EAB02 /* RedBoxAppViewController.xib */; };
 		5115512A12FF54B9003E656A /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5112771E12FF1DA4008EAB02 /* MainWindow-iPad.xib */; };
-		51578C811301BEAA009862CE /* liblibpng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 515EB55612FF3C12004FB469 /* liblibpng.a */; };
 		51578C821301BEAB009862CE /* libRedBox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 515EB55412FF3C12004FB469 /* libRedBox.a */; };
-		51578C831301BEAB009862CE /* libsimple-image.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 515EB55812FF3C12004FB469 /* libsimple-image.a */; };
+		51C96A59132D459000A9B088 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C96A58132D459000A9B088 /* OpenAL.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,20 +39,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = 515EB50512FF34AA004FB469;
 			remoteInfo = RedBox;
-		};
-		515EB55512FF3C12004FB469 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5112773A12FF2011008EAB02 /* RedBox.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 515EB50612FF34AA004FB469;
-			remoteInfo = libpng;
-		};
-		515EB55712FF3C12004FB469 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5112773A12FF2011008EAB02 /* RedBox.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 515EB50712FF34AA004FB469;
-			remoteInfo = "simple-image";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -80,6 +65,8 @@
 		5112772612FF1DA4008EAB02 /* RedBoxAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedBoxAppViewController.m; sourceTree = "<group>"; };
 		5112773012FF1DD3008EAB02 /* Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Loader.h; sourceTree = "<group>"; };
 		5112773A12FF2011008EAB02 /* RedBox.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RedBox.xcodeproj; path = redbox/ide/Xcode/RedBox.xcodeproj; sourceTree = "<group>"; };
+		51C96A56132D457100A9B088 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		51C96A58132D459000A9B088 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,15 +74,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51C96A59132D459000A9B088 /* OpenAL.framework in Frameworks */,
 				510C25DA13019C7D00CFE26E /* libz.dylib in Frameworks */,
 				511276D212FF02FE008EAB02 /* UIKit.framework in Frameworks */,
 				511276D412FF02FE008EAB02 /* Foundation.framework in Frameworks */,
 				511276D612FF02FE008EAB02 /* CoreGraphics.framework in Frameworks */,
 				511276D812FF02FE008EAB02 /* QuartzCore.framework in Frameworks */,
 				511276DA12FF02FE008EAB02 /* OpenGLES.framework in Frameworks */,
-				51578C811301BEAA009862CE /* liblibpng.a in Frameworks */,
 				51578C821301BEAB009862CE /* libRedBox.a in Frameworks */,
-				51578C831301BEAB009862CE /* libsimple-image.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +99,7 @@
 		511276C212FF02FD008EAB02 = {
 			isa = PBXGroup;
 			children = (
+				51C96A58132D459000A9B088 /* OpenAL.framework */,
 				5112772D12FF1DD3008EAB02 /* application */,
 				510C25CA13019BF100CFE26E /* resources */,
 				5112773312FF1DF3008EAB02 /* libraries */,
@@ -134,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				510C25D913019C7D00CFE26E /* libz.dylib */,
+				51C96A56132D457100A9B088 /* OpenAL.framework */,
 				511276D112FF02FE008EAB02 /* UIKit.framework */,
 				511276D312FF02FE008EAB02 /* Foundation.framework */,
 				511276D512FF02FE008EAB02 /* CoreGraphics.framework */,
@@ -193,8 +181,6 @@
 			isa = PBXGroup;
 			children = (
 				515EB55412FF3C12004FB469 /* libRedBox.a */,
-				515EB55612FF3C12004FB469 /* liblibpng.a */,
-				515EB55812FF3C12004FB469 /* libsimple-image.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -268,20 +254,6 @@
 			fileType = archive.ar;
 			path = libRedBox.a;
 			remoteRef = 515EB55312FF3C12004FB469 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		515EB55612FF3C12004FB469 /* liblibpng.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = liblibpng.a;
-			remoteRef = 515EB55512FF3C12004FB469 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		515EB55812FF3C12004FB469 /* libsimple-image.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libsimple-image.a";
-			remoteRef = 515EB55712FF3C12004FB469 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
