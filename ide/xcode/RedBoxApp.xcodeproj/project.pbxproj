@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5103332913326EB20097CD96 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5103332813326EB20097CD96 /* AVFoundation.framework */; };
 		510C25DA13019C7D00CFE26E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 510C25D913019C7D00CFE26E /* libz.dylib */; };
 		511276D212FF02FE008EAB02 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 511276D112FF02FE008EAB02 /* UIKit.framework */; };
 		511276D412FF02FE008EAB02 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 511276D312FF02FE008EAB02 /* Foundation.framework */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5103332813326EB20097CD96 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		510C25D913019C7D00CFE26E /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		511276CD12FF02FE008EAB02 /* RedBoxApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedBoxApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		511276D112FF02FE008EAB02 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -74,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5103332913326EB20097CD96 /* AVFoundation.framework in Frameworks */,
 				51C96A59132D459000A9B088 /* OpenAL.framework in Frameworks */,
 				510C25DA13019C7D00CFE26E /* libz.dylib in Frameworks */,
 				511276D212FF02FE008EAB02 /* UIKit.framework in Frameworks */,
@@ -119,6 +122,7 @@
 		511276D012FF02FE008EAB02 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5103332813326EB20097CD96 /* AVFoundation.framework */,
 				51C96A58132D459000A9B088 /* OpenAL.framework */,
 				510C25D913019C7D00CFE26E /* libz.dylib */,
 				51C96A56132D457100A9B088 /* OpenAL.framework */,
