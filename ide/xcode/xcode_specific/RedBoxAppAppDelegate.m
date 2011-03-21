@@ -16,8 +16,9 @@
 {
 	// Override point for customization after application launch.
 	self.window.rootViewController = self.viewController;
-	RedBox::Loader::load();
+	
 	RedBox::RedBoxEngine::initializeEngine([UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
+	RedBox::Loader::load();
 
     return YES;
 }
