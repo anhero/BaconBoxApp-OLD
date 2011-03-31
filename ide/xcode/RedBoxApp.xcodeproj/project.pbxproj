@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2426EE1813442DB9009D3E6D /* Orb3.png in Resources */ = {isa = PBXBuildFile; fileRef = 2426EE1713442DB9009D3E6D /* Orb3.png */; };
+		2467F8F41338EAFF004E7FF9 /* PlayState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2467F8F21338EAFF004E7FF9 /* PlayState.cpp */; };
+		2467F8F51338EAFF004E7FF9 /* PlayState.h in Headers */ = {isa = PBXBuildFile; fileRef = 2467F8F31338EAFF004E7FF9 /* PlayState.h */; };
+		2467F8F81338EBBD004E7FF9 /* hey.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2467F8F61338EBBD004E7FF9 /* hey.wav */; };
+		2467F8FB1338ECC3004E7FF9 /* menu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2467F8FA1338ECC3004E7FF9 /* menu.mp3 */; };
 		5103332913326EB20097CD96 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5103332813326EB20097CD96 /* AVFoundation.framework */; };
 		510C25DA13019C7D00CFE26E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 510C25D913019C7D00CFE26E /* libz.dylib */; };
 		511276D212FF02FE008EAB02 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 511276D112FF02FE008EAB02 /* UIKit.framework */; };
@@ -44,6 +49,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2426EE1713442DB9009D3E6D /* Orb3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Orb3.png; sourceTree = "<group>"; };
+		2467F8F21338EAFF004E7FF9 /* PlayState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PlayState.cpp; sourceTree = "<group>"; };
+		2467F8F31338EAFF004E7FF9 /* PlayState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayState.h; sourceTree = "<group>"; };
+		2467F8F61338EBBD004E7FF9 /* hey.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hey.wav; sourceTree = "<group>"; };
+		2467F8FA1338ECC3004E7FF9 /* menu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = menu.mp3; sourceTree = "<group>"; };
 		5103332813326EB20097CD96 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		510C25D913019C7D00CFE26E /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		511276CD12FF02FE008EAB02 /* RedBoxApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedBoxApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,9 +101,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2426EE1613442DB9009D3E6D /* test */ = {
+			isa = PBXGroup;
+			children = (
+				2426EE1713442DB9009D3E6D /* Orb3.png */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
 		510C25CA13019BF100CFE26E /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				2426EE1613442DB9009D3E6D /* test */,
+				2467F8F61338EBBD004E7FF9 /* hey.wav */,
+				2467F8FA1338ECC3004E7FF9 /* menu.mp3 */,
 			);
 			name = resources;
 			path = ../../resources;
@@ -159,6 +180,8 @@
 			isa = PBXGroup;
 			children = (
 				5112773012FF1DD3008EAB02 /* Loader.h */,
+				2467F8F21338EAFF004E7FF9 /* PlayState.cpp */,
+				2467F8F31338EAFF004E7FF9 /* PlayState.h */,
 			);
 			name = application;
 			path = ../../application;
@@ -196,6 +219,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2467F8F51338EAFF004E7FF9 /* PlayState.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +295,9 @@
 				5115512912FF54AA003E656A /* RedBoxAppViewController.xib in Resources */,
 				5115512A12FF54B9003E656A /* MainWindow-iPad.xib in Resources */,
 				5115512412FF54A8003E656A /* MainWindow.xib in Resources */,
+				2467F8F81338EBBD004E7FF9 /* hey.wav in Resources */,
+				2467F8FB1338ECC3004E7FF9 /* menu.mp3 in Resources */,
+				2426EE1813442DB9009D3E6D /* Orb3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +312,7 @@
 				5112772912FF1DA4008EAB02 /* main.m in Sources */,
 				5112772B12FF1DA4008EAB02 /* RedBoxAppAppDelegate.m in Sources */,
 				5112772C12FF1DA4008EAB02 /* RedBoxAppViewController.m in Sources */,
+				2467F8F41338EAFF004E7FF9 /* PlayState.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,7 +411,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "xcode_specific/RedBoxApp-Prefix.pch";
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = ../../libraries/redbox/libraries/ios/universal/include;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "../../libraries/redbox/RedBox/**";
 				WRAPPER_EXTENSION = app;
@@ -398,7 +426,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "xcode_specific/RedBoxApp-Prefix.pch";
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = ../../libraries/redbox/libraries/ios/universal/include;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "../../libraries/redbox/RedBox/**";
 				VALIDATE_PRODUCT = YES;
