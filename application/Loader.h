@@ -1,8 +1,7 @@
 #ifndef __LOADER_H
 #define __LOADER_H
 
-#include "RedBoxEngine.h"
-#include "State.h"
+#include <RedBox.h>
 
 namespace RedBox {
 	class Loader  {

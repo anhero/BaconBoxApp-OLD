@@ -377,15 +377,15 @@
 		511276FA12FF02FE008EAB02 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "xcode_specific/RedBoxApp-Prefix.pch";
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/include\"";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "../../libraries/redbox/RedBox/**";
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -393,14 +393,14 @@
 		511276FB12FF02FE008EAB02 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "xcode_specific/RedBoxApp-Prefix.pch";
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/include\"";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "../../libraries/redbox/RedBox/**";
+				USER_HEADER_SEARCH_PATHS = "";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
