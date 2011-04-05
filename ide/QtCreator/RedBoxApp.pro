@@ -39,7 +39,7 @@ INCLUDEPATH +=  $$PWD/../../libraries/redbox/RedBox \
 SOURCES += $$PWD/QtCreator_specific/main.cpp\
         $$PWD/QtCreator_specific/mainwindow.cpp \
     $$PWD/QtCreator_specific/redboxwidget.cpp \
-    #$$PWD/../../application/*.cpp \
+	#$$PWD/../../application/*.cpp \
 
 HEADERS  += $$PWD/QtCreator_specific/mainwindow.h \
     $$PWD/QtCreator_specific/redboxwidget.h \
@@ -52,10 +52,10 @@ QMAKE_LFLAGS += -F/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/OpenA
 LIBS += -framework OpenAL
 }
 
-INCLUDEPATH += $$PWD/../../../libraries/redbox/RedBox
-DEPENDPATH += $$PWD/../../../libraries/redbox/RedBox
-INCLUDEPATH += $$PWD/../../../libraries/redbox/libraries/ios/i386/include
-DEPENDPATH += $$PWD/../../../libraries/redbox/libraries/ios/i386/include
+INCLUDEPATH += $$PWD/../../libraries/redbox/RedBox
+DEPENDPATH += $$PWD/../../libraries/redbox/RedBox
+INCLUDEPATH += $$PWD/../../libraries/redbox/libraries/ios/i386/include
+DEPENDPATH += $$PWD/../../libraries/redbox/libraries/ios/i386/include
 
 macx: LIBS += -L$$PWD/../../libraries/redbox/libraries/ios/i386/lib/ -lpng15
 
