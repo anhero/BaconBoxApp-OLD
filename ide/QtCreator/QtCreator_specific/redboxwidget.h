@@ -5,7 +5,7 @@
 #include <QWidget>
 #include <QGLWidget>
 
-#include <StatesSystem/RedBoxEngine.h>
+#include <RedBox.h>
 
 class RedBoxWidget : public QGLWidget {
 	Q_OBJECT

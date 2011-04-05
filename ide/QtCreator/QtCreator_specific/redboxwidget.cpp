@@ -7,9 +7,8 @@
 #include <QWidget>
 #include <QGLWidget>
 
-#include <StatesSystem/RedBoxEngine.h>
-
-#include "PlayState.h"
+#include <RedBox.h>
+#include "Loader.h"
 
 RedBoxWidget::RedBoxWidget(QWidget* parent): QGLWidget(parent) {
 	setMaximumSize(SCREEN_WIDTH, SCREEN_HEIGHT);
@@ -34,8 +33,8 @@ QSize RedBoxWidget::minimumSizeHint() const {
 }
 
 void RedBoxWidget::initializeGL() {
-	RedBox::RedBoxEngine::addState(new PlayState());
 	RedBox::RedBoxEngine::initializeEngine(SCREEN_WIDTH, SCREEN_HEIGHT);
+        RedBox::Loader();
 }
 
 void RedBoxWidget::paintGL() {
