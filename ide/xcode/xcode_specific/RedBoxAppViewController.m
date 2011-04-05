@@ -2,7 +2,7 @@
 
 #import "RedBoxAppViewController.h"
 #import "EAGLView.h"
-#include "RedBoxEngine.h"
+#include <RedBox.h>
 
 
 @interface RedBoxAppViewController ()
