@@ -14,16 +14,22 @@ CONFIG += x86
 DEFINES += QT
 
 INCLUDEPATH += ../../../libraries/redbox/RedBox \
-	../../../libraries/redbox/RedBox/Audio \
-	../../../libraries/redbox/RedBox/Audio/OpenAL \
-	../../../libraries/redbox/RedBox/Display \
-	../../../libraries/redbox/RedBox/Display/Camera \
-	../../../libraries/redbox/RedBox/Display/GraphicDrivers \
-	../../../libraries/redbox/RedBox/Display/Emitter \
-	../../../libraries/redbox/RedBox/Display/Interface/Text \
-	../../../libraries/redbox/RedBox/other \
-	../../../libraries/redbox/RedBox/Helper \
-	../../../libraries/redbox/RedBox/StatesSystem \
+	../../../libraries/redbox/RedBox/RedBox \
+	../../../libraries/redbox/RedBox/RedBox/Audio \
+	../../../libraries/redbox/RedBox/RedBox/Audio/OpenAL \
+	../../../libraries/redbox/RedBox/RedBox/Display \
+	../../../libraries/redbox/RedBox/RedBox/Display/Driver \
+	../../../libraries/redbox/RedBox/RedBox/Display/Text \
+	../../../libraries/redbox/RedBox/RedBox/Emitter \
+	../../../libraries/redbox/RedBox/RedBox/Input \
+	../../../libraries/redbox/RedBox/RedBox/Input/Accelerometer \
+	../../../libraries/redbox/RedBox/RedBox/Input/GamePad \
+	../../../libraries/redbox/RedBox/RedBox/Input/Keyboard \
+	../../../libraries/redbox/RedBox/RedBox/Input/Keyboard/Qt \
+	../../../libraries/redbox/RedBox/RedBox/Input/Pointer \
+	../../../libraries/redbox/RedBox/RedBox/Physic \
+	../../../libraries/redbox/RedBox/RedBox/Helper \
+	../../../libraries/redbox/RedBox/RedBox/SignalSlots \
 	../../../application
 
 SOURCES += main.cpp\
