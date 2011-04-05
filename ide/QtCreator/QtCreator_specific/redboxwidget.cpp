@@ -34,7 +34,7 @@ QSize RedBoxWidget::minimumSizeHint() const {
 
 void RedBoxWidget::initializeGL() {
 	RedBox::RedBoxEngine::initializeEngine(SCREEN_WIDTH, SCREEN_HEIGHT);
-        RedBox::Loader();
+	RedBox::Loader::load();
 }
 
 void RedBoxWidget::paintGL() {
