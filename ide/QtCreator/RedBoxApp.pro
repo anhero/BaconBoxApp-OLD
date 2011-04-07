@@ -39,7 +39,7 @@ INCLUDEPATH +=  $$PWD/../../libraries/redbox/RedBox \
 SOURCES += $$PWD/QtCreator_specific/main.cpp\
         $$PWD/QtCreator_specific/mainwindow.cpp \
     $$PWD/QtCreator_specific/redboxwidget.cpp \
-	#$$PWD/../../application/*.cpp \
+	$$PWD/../../application/*.cpp \
 
 HEADERS  += $$PWD/QtCreator_specific/mainwindow.h \
     $$PWD/QtCreator_specific/redboxwidget.h \

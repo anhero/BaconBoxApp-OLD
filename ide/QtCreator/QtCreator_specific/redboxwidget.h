@@ -10,8 +10,8 @@
 class RedBoxWidget : public QGLWidget {
 	Q_OBJECT
 public:
-	static const int SCREEN_WIDTH = 640;
-	static const int SCREEN_HEIGHT = 480;
+	static int screenWidth;
+	static int screenHeight;
 	RedBoxWidget(QWidget *parent = 0);
 	~RedBoxWidget();
 
@@ -24,7 +24,6 @@ protected:
 	void initializeGL();
 	void paintGL();
 	void resizeGL(int width, int height);
-
 
 private slots:
 	void animate();

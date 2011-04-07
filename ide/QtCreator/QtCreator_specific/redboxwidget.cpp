@@ -6,34 +6,41 @@
 #include <QtOpenGL>
 #include <QWidget>
 #include <QGLWidget>
+#include <QMouseEvent>
+#include <QPoint>
+#include <QApplication>
 
-#include <RedBox.h>
+#include <RedBox/RedBoxEngine.h>
 #include "Loader.h"
 
+int RedBoxWidget::screenWidth = 0;
+int RedBoxWidget::screenHeight = 0;
+
 RedBoxWidget::RedBoxWidget(QWidget* parent): QGLWidget(parent) {
-	setMaximumSize(SCREEN_WIDTH, SCREEN_HEIGHT);
 
 	timer = new QTimer(this);
 	connect(timer, SIGNAL(timeout()), this, SLOT(animate()));
 	timer->start(1000/60);
 
 	this->setAutoFillBackground(false);
+	this->grabMouse();
+	this->setMouseTracking(true);
+	this->setEnabled(true);
 }
 
 RedBoxWidget::~RedBoxWidget() {
 }
 
 QSize RedBoxWidget::sizeHint() const {
-	return QSize(SCREEN_WIDTH, SCREEN_HEIGHT);
+	return QSize(screenWidth, screenHeight);
 }
 
 
 QSize RedBoxWidget::minimumSizeHint() const {
-	return QSize(SCREEN_WIDTH, SCREEN_HEIGHT);
+	return QSize(screenWidth, screenHeight);
 }
 
 void RedBoxWidget::initializeGL() {
-	RedBox::RedBoxEngine::initializeEngine(SCREEN_WIDTH, SCREEN_HEIGHT);
 	RedBox::Loader::load();
 }
 
