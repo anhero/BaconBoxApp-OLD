@@ -16,7 +16,6 @@ DEFINES += QT
 
 DESTDIR = $$PWD/../../build/bin
 
-
 INCLUDEPATH +=  $$PWD/../../libraries/redbox/RedBox \
                 $$PWD/../../libraries/redbox/RedBox/RedBox \
                 $$PWD/../../libraries/redbox/RedBox/RedBox/Audio \
