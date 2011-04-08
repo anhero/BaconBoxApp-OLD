@@ -2,6 +2,8 @@
 
 #import "EAGLView.h"
 
+#include <RedBox/IOSPointer.h>
+
 @interface EAGLView (PrivateMethods)
 - (void)createFramebuffer;
 - (void)deleteFramebuffer;
@@ -52,6 +54,18 @@
         
         [EAGLContext setCurrentContext:nil];
     }
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+	RedBox::IOSPointer::touchBegin.shoot(touches, event);
+} 
+
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+	RedBox::IOSPointer::touchEnd.shoot(touches, event);
+}
+
+- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
+	RedBox::IOSPointer::touchMove.shoot(touches, event);
 }
 
 - (void)createFramebuffer
