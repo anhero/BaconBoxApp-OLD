@@ -3,9 +3,9 @@
 #include <iostream>
 
 #include <RedBox/RedBoxEngine.h>
-#include <RedBox/Input/InputManager.h>
-#include <RedBox/Input/Keyboard/Qt/QtKeyboard.h>
-#include <RedBox/Input/Pointer/Qt/QtPointer.h>
+#include <RedBox/InputManager.h>
+#include <RedBox/QtKeyboard.h>
+#include <RedBox/QtPointer.h>
 
 #include "ui_mainwindow.h"
 
