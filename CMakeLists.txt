@@ -27,7 +27,6 @@ set(RedBoxApp_framework_list  "Foundation" "AudioToolBox" "AVFoundation" "CoreGr
 else()
 		FIND_PACKAGE(OpenGL REQUIRED)
 		list(APPEND RedBoxApp_libraries_list ${OPENGL_LIBRARY})
-		mm(OPENGL_LIBRARY)
 		FIND_PACKAGE(OpenAL REQUIRED)
 		list(APPEND RedBoxApp_IncludeDir_list ${OPENAL_INCLUDE_DIR})
 		list(APPEND RedBoxApp_libraries_list ${OPENAL_LIBRARY})
@@ -79,6 +78,7 @@ INCLUDE_DIRECTORIES(${RedBox_BINARY_DIR}/${CMAKE_BUILD_TYPE}/include)
 
 link_directories(${RedBox_BINARY_DIR}/${CMAKE_BUILD_TYPE}/lib)
 
+link_directories( ${RedBox_BINARY_DIR}/Dependencies/lib/)
 
 add_executable(
 	RedBoxApp
@@ -87,8 +87,7 @@ add_executable(
 
 					
 )
-mm(RedBoxApp_libraries_list)
-	target_link_libraries(
+target_link_libraries(
 	RedBoxApp	
 	RedBox
 	${RedBoxApp_libraries_list}
