@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.6)
 project(RedBoxApp)
 
-add_subdirectory(${RedBoxApp_SOURCE_DIR}/libraries/redbox ${RedBoxApp_BINARY_DIR})
+add_subdirectory(${RedBoxApp_SOURCE_DIR}/libraries/redbox ${RedBoxApp_BINARY_DIR}/RedBox)
 #We force the build type to be at least debug
 if(NOT CMAKE_BUILD_TYPE)
   SET(CMAKE_BUILD_TYPE Debug CACHE STRING
@@ -62,6 +62,7 @@ else()
 
 endif(iphone)
 
+file(GLOB RedBoxApp_resources ${RedBoxApp_SOURCE_DIR}/resources/*)
 
 file(GLOB RedBoxApp_application_sources ${RedBoxApp_SOURCE_DIR}/application/*.cpp)
 list(APPEND RedBoxApp_sources ${RedBoxApp_application_sources})
@@ -70,23 +71,39 @@ list(APPEND RedBoxApp_headers ${RedBoxApp_application_headers})
 
 INCLUDE_DIRECTORIES(${RedBoxApp_IncludeDir_list})
 INCLUDE_DIRECTORIES(${RedBoxApp_SOURCE_DIR}/application)
-INCLUDE_DIRECTORIES(${RedBoxApp_BINARY_DIR}/Dependencies/include)
-INCLUDE_DIRECTORIES(${RedBoxApp_IncludeDir_list})
+INCLUDE_DIRECTORIES(${RedBox_BINARY_DIR}/Dependencies/include)
 
 INCLUDE_DIRECTORIES(${RedBox_BINARY_DIR}/${CMAKE_BUILD_TYPE}/include)
 
 
 link_directories(${RedBox_BINARY_DIR}/${CMAKE_BUILD_TYPE}/lib)
+link_directories(${RedBox_BINARY_DIR}/Dependencies/lib/)
 
-link_directories( ${RedBox_BINARY_DIR}/Dependencies/lib/)
+message(STATUS ${RedBoxApp_IncludeDir_list})
 
-add_executable(
-	RedBoxApp
-	${RedBoxApp_sources}
-	${RedBoxApp_headers}
+if(APPLE)
+	set_source_files_properties(
+	${RedBoxApp_resources}
+	 PROPERTIES
+	  MACOSX_PACKAGE_LOCATION Resources
+	)
 
-					
-)
+	add_executable(
+		RedBoxApp
+		MACOSX_BUNDLE
+		${RedBoxApp_sources}
+		${RedBoxApp_headers}
+		${RedBoxApp_resources}
+	)
+else()
+
+	add_executable(
+		RedBoxApp
+		${RedBoxApp_sources}
+		${RedBoxApp_headers}
+		${RedBoxApp_resources}
+	)
+endif(APPLE)
 target_link_libraries(
 	RedBoxApp	
 	RedBox
@@ -95,3 +112,4 @@ target_link_libraries(
 
 add_dependencies(RedBoxApp RedBox)
 	
+
