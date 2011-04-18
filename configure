@@ -1,5 +1,12 @@
 #! /bin/bash
 
+#Force 32 bits compilation on OSX
+if [ "$(uname -s)" == "Darwin" ]; then
+	export HOSTTYPE=i386
+	export CFLAGS="-arch ${HOSTTYPE}"
+fi
+
+
 CMAKE=$(which cmake)
 if [ "${CMAKE}" == "" ]; then
 	echo "CMake is not correctly installed and is necessary to build this project." && exit 1
