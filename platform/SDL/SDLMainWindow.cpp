@@ -17,6 +17,7 @@
 
 #include <RedBox/RedBoxEngine.h>
 #include <RedBox/InputManager.h>
+#include <RedBox/SDLInputManager.h>
 
 #include "Loader.h"
 
@@ -34,6 +35,7 @@ SDLMainWindow* SDLMainWindow::getInstance() {
 void SDLMainWindow::onRedBoxInit(int width, int height) {
 	SDL_SetVideoMode(width, height, 32, SDL_OPENGL);
 	InputManager::getInstance()->setNbKeyboards(1);
+	InputManager::getInstance()->setNbPointers(1);
 }
 
 SDLMainWindow::SDLMainWindow() {
@@ -44,19 +46,7 @@ SDLMainWindow::SDLMainWindow() {
 	
 	Loader::load();
 	
-	bool running = true;
-	SDL_Event event;
-	
-	while(running) {
-		SDL_PollEvent(&event);
-		
-		switch(event.type) {
-		case SDL_QUIT:
-			running = false;
-			break;
-		default:
-			break;
-		}
+	while(SDLInputManager::getSDLInstance()->isRunning()) {
 		RedBoxEngine::pulse();
 		SDL_GL_SwapBuffers();
 	}
