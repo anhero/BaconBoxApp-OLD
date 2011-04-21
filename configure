@@ -71,6 +71,12 @@ while [ $# -gt 0 ];do
 	shift;
 done
 
+#Defining default target, if not set
+if [ -z "${target}" ]; then
+	target="SDL"
+fi
+#Adding target to cache entries.
+params=( ${params[@]} "-D${target}=1" )
 
 
 if [ -d build ]; then
@@ -89,6 +95,5 @@ if [ "${target}" == "iphoneOS" ]; then
 elif [  "${target}" == "iphoneSimulator" ]; then
 	"${configurePath}/configure-iphone-simulator" "${params[@]}"
 else
-	params=( ${params[@]} "-D${target}=1" )
 	"${configurePath}/configure-current" "${params[@]}"
 fi
