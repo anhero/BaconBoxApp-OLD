@@ -6,6 +6,7 @@ if [ "$(uname -s)" == "Darwin" ]; then
 	export CFLAGS="-arch ${HOSTTYPE}"
 fi
 
+#Checks
 
 CMAKE=$(which cmake)
 if [ "${CMAKE}" == "" ]; then
@@ -14,33 +15,46 @@ fi
 
 LIBBUILDTOOL=$(which libbuildtool)
 if [ "${LIBBUILDTOOL}" == "" ]; then
-	echo "LibBuildTool is not correctly installed and is necessary to build the dependencies of this project." && exit 1
+	echo "libbuildtool is not correctly installed and is necessary to build the dependencies of this project." && exit 1
+fi
+
+if [ -d build ]; then
+	echo "Configure already ran."
+	echo "PRO-TIP: make distclean can be used to clean the source tree."
+	exit 0
 fi
 
 
+# Help function
 function print_help() {
 	#@ function print_help
 	#@ Prints help.
 
 	local this="$(basename ${0})"
-	echo "
-Usage:
-     -t | --target <name>   Configure the project for the <name> target.
-						   Current supported target:
-                           - current (default)
+	cat <<EOHELP
+Usage: $0 <options>
 
-                           - iphoneOS (You must specify a sdk version like this: './configure -t iphoneOS 4.3' 
-                           where 4.3 is the sdk version number.
-
-                           - iphoneSimulator (You must specify a sdk version like this: './configure -t iphoneSimulator 4.3' 
-                           where 4.3 is the sdk version number.
-
-	-G |--build-system | --generator Specify which Cmake generator to use	
-	"
+OPTIONS
+    -t | --target <name>   Configure the project for the <name> target.
+                           Currently supported targets:
+                           - SDL (default)
+                           - QT
+                           - iphoneOS 
+                             You must specify a sdk version like this:
+                                 './configure -t iphoneOS 4.3' 
+                             where 4.3 is the sdk version number.
+                           - iphoneSimulator 
+                             You must specify a sdk version like this:
+                                 './configure -t iphoneSimulator 4.3' 
+                             where 4.3 is the sdk version number.
+    
+    -G |--build-system | --generator Specify which Cmake generator to use	
+EOHELP
 }
 
-params=""
 
+#Initializing parameters variable
+params=""
 #Looping on the parameters
 while [ $# -gt 0 ];do
 	case "$1" in
@@ -65,7 +79,7 @@ while [ $# -gt 0 ];do
 			params=( ${params[@]-} -G"${1}" )
 			;;
 		*)
-			#Keeping parameters
+			#Keeping unknown parameters
 			params=( ${params[@]-} "${1}" )
 		esac
 	shift;
@@ -77,13 +91,6 @@ if [ -z "${target}" ]; then
 fi
 #Adding target to cache entries.
 params=( ${params[@]} "-D${target}=1" )
-
-
-if [ -d build ]; then
-	echo "Configure already ran."
-	echo "PRO-TIP: make distclean can be used to clean the source tree."
-	exit 0
-fi
 
 mkdir -p build
 cp ./script/CMake/Makefile/Makefile .
