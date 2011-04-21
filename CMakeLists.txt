@@ -1,6 +1,10 @@
 cmake_minimum_required(VERSION 2.6)
 project(RedBoxApp)
 
+if(NOT iphone AND NOT QT AND NOT SDL)
+	set(SDL 1)
+endif(NOT iphone AND NOT QT AND NOT SDL)
+
 add_subdirectory(${RedBoxApp_SOURCE_DIR}/libraries/redbox ${RedBoxApp_BINARY_DIR}/RedBox)
 #We force the build type to be at least debug
 if(NOT CMAKE_BUILD_TYPE)
@@ -58,8 +62,7 @@ elseif(QT)
 	list(APPEND RedBoxApp_sources ${RedBoxApp_QT_MOC_sources} ${RedBoxApp_QT_RC_sources})
 	list(APPEND RedBoxApp_headers ${RedBoxApp_QT_uis_headers})
 	source_group(qtspecific FILES ${RedBoxApp_QT_sources} ${RedBoxApp_QT_MOC_sources}  ${RedBoxApp_QT_RC_sources} ${RedBoxApp_QT_uis_headers})
-else(iphone)
-	set(SDL 1)
+elseif(SDL)
 	if(APPLE)
 		set(RedBoxApp_framework_list "Cocoa" "AudioUnit" "CoreAudio" "IOKit" "ForceFeedback" "CoreFoundation" "Carbon")
 		foreach(framework ${RedBoxApp_framework_list})
