@@ -1,10 +1,10 @@
 #! /bin/bash
 
-#Force 32 bits compilation on OSX
-if [ "$(uname -s)" == "Darwin" ]; then
-	export HOSTTYPE=i386
-	export CFLAGS="-arch ${HOSTTYPE}"
-fi
+##Force 32 bits compilation on OSX
+#if [ "$(uname -s)" == "Darwin" ]; then
+#	export HOSTTYPE=i386
+#	export CFLAGS="-arch ${HOSTTYPE}"
+#fi
 
 #Checks
 
