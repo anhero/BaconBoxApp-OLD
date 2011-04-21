@@ -20,7 +20,7 @@ RedBoxWidget::RedBoxWidget(QWidget* parent): QGLWidget(parent) {
 
 	timer = new QTimer(this);
 	connect(timer, SIGNAL(timeout()), this, SLOT(animate()));
-	timer->start(1000/60);
+	timer->start(1);
 
 	this->setAutoFillBackground(false);
 	this->grabMouse();
