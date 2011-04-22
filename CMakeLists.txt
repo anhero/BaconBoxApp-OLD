@@ -43,9 +43,6 @@ elseif(QT)
 	list(APPEND RedBoxApp_IncludeDir_list ${QT_INCLUDE_DIR} ${QT_QTOPENGL_INCLUDE_DIR})
 	list(APPEND RedBoxApp_libraries_list ${QT_LIBRARIES} ${QT_QTOPENGL_LIBRARY})
 	mm(QT_QTOPENGL_LIBRARIES)
-	set(CFLAGS "-m32" ${CFLAGS})
-	set(CXXFLAGS "-m32" ${CXXFLAGS})
-	set(CMAKE_OSX_ARCHITECTURES "i386")
 	set(RedBoxApp_QtSpecific_path  ${RedBoxApp_SOURCE_DIR}/ide/QtCreator/QtCreator_specific/)
 
 	file(GLOB RedBoxApp_QT_MOC_headers ${RedBoxApp_QtSpecific_path}/*.h)
@@ -79,10 +76,6 @@ elseif(SDL)
 	list(APPEND RedBoxApp_libraries_list ${OPENAL_LIBRARY})
 
 	ADD_DEFINITIONS("-DSDL")
-	
-	set(CFLAGS "-m32" ${CFLAGS})
-	set(CXXFLAGS "-m32" ${CXXFLAGS})
-	set(CMAKE_OSX_ARCHITECTURES "i386")
 
 	set(RedBoxApp_SDLSpecific_path ${RedBoxApp_SOURCE_DIR}/platform/SDL/)
 
