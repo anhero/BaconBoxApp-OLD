@@ -41,7 +41,7 @@ void SDLMainWindow::onRedBoxInit(int width, int height) {
 SDLMainWindow::SDLMainWindow() {
 	RedBoxEngine::onInitialize.connect(this, &SDLMainWindow::onRedBoxInit);
 	
-	SDL_Init(SDL_INIT_VIDEO);
+	SDL_Init(SDL_INIT_VIDEO | SDL_INIT_AUDIO);
 	SDL_WM_SetCaption("RedBoxApp", NULL);
 	
 	Loader::load();
