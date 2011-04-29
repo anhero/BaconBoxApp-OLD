@@ -48,7 +48,10 @@ SDLMainWindow::SDLMainWindow() {
 	
 	while(SDLInputManager::getSDLInstance()->isRunning()) {
 		RedBoxEngine::pulse();
-		SDL_GL_SwapBuffers();
+		if(!RedBoxEngine::isBufferSwapped()) {
+			SDL_GL_SwapBuffers();
+			RedBoxEngine::setBufferSwapped();
+		}
 	}
 }
 
