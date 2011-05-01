@@ -34,8 +34,8 @@ SDLMainWindow* SDLMainWindow::getInstance() {
 
 void SDLMainWindow::onRedBoxInit(int width, int height) {
 	SDL_SetVideoMode(width, height, 32, SDL_OPENGL);
-	InputManager::getInstance()->setNbKeyboards(1);
-	InputManager::getInstance()->setNbPointers(1);
+	InputManager::getInstance().setNbKeyboards(1);
+	InputManager::getInstance().setNbPointers(1);
 }
 
 SDLMainWindow::SDLMainWindow() {
