@@ -5,7 +5,18 @@ if(NOT iphone AND NOT QT AND NOT SDL)
 	set(SDL 1)
 endif(NOT iphone AND NOT QT AND NOT SDL)
 
-add_subdirectory(${RedBoxApp_SOURCE_DIR}/libraries/redbox ${RedBoxApp_BINARY_DIR}/RedBox)
+
+set(RedBox_directory ${RedBoxApp_SOURCE_DIR}/libraries/redbox/)
+if(EXISTS "${RedBox_directory}")
+	message(STATUS "RedBox libraries... found")
+else(EXISTS "${RedBox_directory}")
+	message(STATUS "RedBox libraries... not found")
+	message(FATAL_ERROR "${RedBox_directory} was not found.")
+endif(EXISTS "${RedBox_directory}")
+
+add_subdirectory(${RedBox_directory} ${RedBoxApp_BINARY_DIR}/RedBox)
+
+
 #We force the build type to be at least debug
 if(NOT CMAKE_BUILD_TYPE)
   SET(CMAKE_BUILD_TYPE Debug CACHE STRING
