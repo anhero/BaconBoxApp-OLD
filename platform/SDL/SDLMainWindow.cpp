@@ -2,22 +2,11 @@
 
 #include <RedBox/PlatformFlagger.h>
 
-#if defined(RB_IPHONE_PLATFORM)
-#import <OpenGLES/ES1/gl.h>
-#import <OpenGLES/ES1/glext.h>
-#elif defined(RB_QT)
-#include <QtOpenGL>
-#elif defined(RB_MAC_PLATFORM)
-#include <OpenGL/gl.h>
-#else
-#include <GL/gl.h>
-#endif
-
 #include <SDL/SDL.h>
 
-#include <RedBox/RedBoxEngine.h>
-#include <RedBox/InputManager.h>
+#include <RedBox.h>
 #include <RedBox/SDLInputManager.h>
+#include <RedBox/RBOpenGL.h>
 
 #include "Loader.h"
 
@@ -39,7 +28,7 @@ void SDLMainWindow::onRedBoxInit(int width, int height) {
 }
 
 SDLMainWindow::SDLMainWindow() {
-	RedBoxEngine::onInitialize.connect(this, &SDLMainWindow::onRedBoxInit);
+	Engine::onInitialize.connect(this, &SDLMainWindow::onRedBoxInit);
 	
 	SDL_Init(SDL_INIT_VIDEO | SDL_INIT_AUDIO);
 	SDL_WM_SetCaption("RedBoxApp", NULL);
@@ -47,10 +36,10 @@ SDLMainWindow::SDLMainWindow() {
 	Loader::load();
 	
 	while(SDLInputManager::getSDLInstance()->isRunning()) {
-		RedBoxEngine::pulse();
-		if(!RedBoxEngine::isBufferSwapped()) {
+		Engine::pulse();
+		if(!Engine::isBufferSwapped()) {
 			SDL_GL_SwapBuffers();
-			RedBoxEngine::setBufferSwapped();
+			Engine::setBufferSwapped();
 		}
 	}
 }

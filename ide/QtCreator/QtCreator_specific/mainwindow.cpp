@@ -2,8 +2,7 @@
 
 #include <iostream>
 
-#include <RedBox/RedBoxEngine.h>
-#include <RedBox/InputManager.h>
+#include <RedBox.h>
 #include <RedBox/QtKeyboard.h>
 #include <RedBox/QtPointer.h>
 
@@ -25,7 +24,7 @@ MainWindow::MainWindow(QWidget *parent) :
 	setWindowTitle("RedBox App");
 
 	setEnabled(true);
-	RedBox::RedBoxEngine::onInitialize.connect(this, &MainWindow::onRedBoxEngineSetSize);
+	RedBox::Engine::onInitialize.connect(this, &MainWindow::onRedBoxEngineSetSize);
 }
 
 MainWindow::~MainWindow()
@@ -37,8 +36,8 @@ void MainWindow::onRedBoxEngineSetSize(int width, int height) {
 	setMaximumSize(width, height);
 	RedBoxWidget::screenWidth = width;
 	RedBoxWidget::screenHeight = height;
-	RedBox::InputManager::getInstance()->setNbKeyboards(1);
-	RedBox::InputManager::getInstance()->setNbPointers(1);
+	RedBox::InputManager::getInstance().setNbKeyboards(1);
+	RedBox::InputManager::getInstance().setNbPointers(1);
 	RedBox::QtPointer::setParentWidget(this);
 	RedBox::QtKeyboard::setParentWidget(this);
 	if(engine) {

@@ -9,10 +9,10 @@ namespace RedBox {
 	public:
 		static void load(){
 			//Setup and add your first state here
-			RedBox::RedBoxEngine::setUpdatesPerSecond(120);
-			RedBox::RedBoxEngine::setMinFps(30);
-			RedBox::RedBoxEngine::initializeEngine(320, 480);
-			RedBoxEngine::addState(new State());
+			RedBox::Engine::setUpdatesPerSecond(60);
+			RedBox::Engine::setMinFps(5);
+			RedBox::Engine::initializeEngine(320, 480);
+			Engine::addState(new State());
 		}
 	};
 }

@@ -1,10 +1,11 @@
 #include <QtGui/QApplication>
 #include <QCoreApplication>
 #include "mainwindow.h"
-#include <RedBox/RedBoxEngine.h>
+#include <RedBox.h>
+
 int main(int argc, char *argv[])
 {
-	RedBox::RedBoxEngine::application(argc, argv);
+	RedBox::Engine::application(argc, argv);
     QApplication a(argc, argv);
 	QCoreApplication::setApplicationName("RedBoxApp");
 	//Q_INIT_RESOURCE(Resources);

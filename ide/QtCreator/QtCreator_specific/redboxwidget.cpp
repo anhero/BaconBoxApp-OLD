@@ -10,7 +10,7 @@
 #include <QPoint>
 #include <QApplication>
 
-#include <RedBox/RedBoxEngine.h>
+#include <RedBox.h>
 #include "Loader.h"
 
 int RedBoxWidget::screenWidth = 0;
@@ -45,14 +45,14 @@ void RedBoxWidget::initializeGL() {
 }
 
 void RedBoxWidget::paintGL() {
-	RedBox::RedBoxEngine::pulse();
+	RedBox::Engine::pulse();
 }
 
 void RedBoxWidget::resizeGL(int width, int height) {
 }
 
 void RedBoxWidget::animate() {
-	RedBox::RedBoxEngine::pulse();
+	RedBox::Engine::pulse();
 	this->swapBuffers();
 }
 
