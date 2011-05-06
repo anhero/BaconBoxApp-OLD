@@ -123,7 +123,7 @@
 - (void)drawFrame
 {
     [(EAGLView *)self.view setFramebuffer];
-	RedBox::RedBoxEngine::pulse();
+	RedBox::Engine::pulse();
     [(EAGLView *)self.view presentFramebuffer];
 }
 
