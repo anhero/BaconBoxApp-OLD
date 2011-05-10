@@ -53,7 +53,6 @@ elseif(QT)
 
 	list(APPEND RedBoxApp_IncludeDir_list ${QT_INCLUDE_DIR} ${QT_QTOPENGL_INCLUDE_DIR})
 	list(APPEND RedBoxApp_libraries_list ${QT_LIBRARIES} ${QT_QTOPENGL_LIBRARY})
-	mm(QT_QTOPENGL_LIBRARIES)
 	set(RedBoxApp_QtSpecific_path  ${RedBoxApp_SOURCE_DIR}/ide/QtCreator/QtCreator_specific/)
 
 	file(GLOB RedBoxApp_QT_MOC_headers ${RedBoxApp_QtSpecific_path}/*.h)
@@ -72,7 +71,7 @@ elseif(QT)
 	source_group(qtspecific FILES ${RedBoxApp_QT_sources} ${RedBoxApp_QT_MOC_sources}  ${RedBoxApp_QT_RC_sources} ${RedBoxApp_QT_uis_headers})
 elseif(SDL)
 	if(APPLE)
-		set(RedBoxApp_framework_list "Cocoa" "AudioUnit" "CoreAudio" "IOKit" "ForceFeedback" "CoreFoundation" "Carbon")
+		set(RedBoxApp_framework_list "Cocoa" "AudioUnit" "CoreAudio" "AudioToolbox" "IOKit" "ForceFeedback" "CoreFoundation" "Carbon")
 		foreach(framework ${RedBoxApp_framework_list})
 			findpkg_framework(${framework})		
 			list(APPEND RedBoxApp_IncludeDir_list ${${framework}_FRAMEWORK_INCLUDES})
@@ -119,7 +118,7 @@ INCLUDE_DIRECTORIES(${RedBox_BINARY_DIR}/Dependencies/include)
 INCLUDE_DIRECTORIES(${RedBox_BINARY_DIR}/${CMAKE_BUILD_TYPE}/include)
 
 
-link_directories(${RedBox_BINARY_DIR}/${CMAKE_BUILD_TYPE}/lib)
+link_directories(${RedBox_BINARY_DIR}/lib/${CMAKE_BUILD_TYPE})
 link_directories(${RedBox_BINARY_DIR}/Dependencies/lib/)
 
 
@@ -169,4 +168,5 @@ target_link_libraries(
 
 add_dependencies(RedBoxApp RedBox)
 	
+
 
