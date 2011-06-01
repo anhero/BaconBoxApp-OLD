@@ -53,6 +53,9 @@ void RedBoxWidget::resizeGL(int width, int height) {
 
 void RedBoxWidget::animate() {
 	RedBox::Engine::pulse();
-	this->swapBuffers();
+	if(!RedBox::Engine::isBufferSwapped()) {
+		this->swapBuffers();
+		RedBox::Engine::setBufferSwapped();
+	}
 }
 
