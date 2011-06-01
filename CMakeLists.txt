@@ -24,6 +24,14 @@ if(NOT CMAKE_BUILD_TYPE)
       FORCE)
 endif(NOT CMAKE_BUILD_TYPE)
 
+#Define the DEBUG symbol if necessary.
+if("${CMAKE_BUILD_TYPE}" STREQUAL "Debug")
+	ADD_DEFINITIONS("-DDEBUG")
+	if(NOT WIN32)
+		set(CMAKE_CXX_FLAGS_DEBUG "-g -rdynamic")
+	endif(NOT WIN32)
+endif("${CMAKE_BUILD_TYPE}" STREQUAL "Debug")
+
 if("${CMAKE_GENERATOR}" STREQUAL "Xcode")
 	set(EXECUTABLE_OUTPUT_PATH  ${RedBoxApp_BINARY_DIR}/bin/)
 else()
@@ -81,9 +89,6 @@ elseif(SDL)
 	FIND_PACKAGE(OpenGL REQUIRED)
 	list(APPEND RedBoxApp_IncludeDir_list ${OPENGL_INCLUDE_DIR})
 	list(APPEND RedBoxApp_libraries_list ${OPENGL_LIBRARY})
-	FIND_PACKAGE(OpenAL REQUIRED)
-	list(APPEND RedBoxApp_IncludeDir_list ${OPENAL_INCLUDE_DIR})
-	list(APPEND RedBoxApp_libraries_list ${OPENAL_LIBRARY})
 
 	ADD_DEFINITIONS("-DSDL")
 
@@ -96,6 +101,10 @@ elseif(SDL)
 
 	list(APPEND RedBoxApp_sources ${RedBoxApp_SDL_sources})
 	list(APPEND RedBoxApp_headers ${RedBoxApp_SDL_headers})
+
+	if(WIN32)
+		set(RedBoxApp_libraries_list ${RedBoxApp_libraries_list} mingw32 m user32 gdi32 winmm imm32 ole32 oleaut32 version uuid )
+	endif(WIN32)
 
 #else(iphone)
 	#message(FATAL_ERROR "Build type not found...")
@@ -118,7 +127,7 @@ INCLUDE_DIRECTORIES(${RedBox_BINARY_DIR}/Dependencies/include)
 INCLUDE_DIRECTORIES(${RedBox_BINARY_DIR}/${CMAKE_BUILD_TYPE}/include)
 
 
-link_directories(${RedBox_BINARY_DIR}/lib/${CMAKE_BUILD_TYPE})
+link_directories(${RedBox_BINARY_DIR}/${CMAKE_BUILD_TYPE}/lib)
 link_directories(${RedBox_BINARY_DIR}/Dependencies/lib/)
 
 
@@ -160,13 +169,32 @@ else()
 		${RedBoxApp_resources}
 	)
 endif(APPLE)
+
 target_link_libraries(
-	RedBoxApp	
+	RedBoxApp
 	RedBox
 	${RedBoxApp_libraries_list}
 	)
 
 add_dependencies(RedBoxApp RedBox)
-	
 
 
+# -------------------------------------
+# Install rules
+
+SET(CMAKE_INSTALL_PREFIX ${CMAKE_BINARY_DIR}/bin/${CMAKE_BUILD_TYPE}/)
+
+SET(RedBoxApp_APP "\${CMAKE_INSTALL_PREFIX}/RedBoxApp")
+IF(APPLE)
+	SET(RedBoxApp_APP "\${CMAKE_INSTALL_PREFIX}/RedBoxApp.app")
+ENDIF(APPLE)
+IF(WIN32)
+	SET(RedBoxApp_APP "\${CMAKE_INSTALL_PREFIX}/RedBoxApp.exe")
+ENDIF(WIN32)
+
+IF(APPLE)
+INSTALL(CODE "
+    include(BundleUtilities)
+    fixup_bundle(\"${RedBoxApp_APP}\" \"\${QTPLUGINS}\" \"${DIRS}\")
+    " COMPONENT Runtime)
+ENDIF(APPLE)
