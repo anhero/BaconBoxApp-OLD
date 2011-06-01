@@ -18,13 +18,6 @@ if [ "${LIBBUILDTOOL}" == "" ]; then
 	echo "libbuildtool is not correctly installed and is necessary to build the dependencies of this project." && exit 1
 fi
 
-if [ -d build ]; then
-	echo "Configure already ran."
-	echo "PRO-TIP: make distclean can be used to clean the source tree."
-	exit 0
-fi
-
-
 # Help function
 function print_help() {
 	#@ function print_help
