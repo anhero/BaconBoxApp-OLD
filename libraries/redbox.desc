@@ -1,0 +1,49 @@
+#!/bin/bash
+
+_name="redbox"
+_license="LGPL" 
+
+_version="7d996592f52e"
+_hg_url="http://bitbucket.org/samueldr/${_name}/"
+_hg_rev="tip"
+
+# To migrate to a hg.fetch
+
+_pkgdir="${_name}"
+
+function fetch() {
+	local _pkgdir=${lib_srcdir}/${_pkgdir}
+	cd "${lib_srcdir}"
+	echo Getting changes
+	hg clone ${_hg_url} "${_pkgdir}" || hg pull -R "${_pkgdir}"
+	echo Updating to revision ${_hg_rev}
+	hg -R "${_pkgdir}" update -C "${_hg_rev}";
+	echo Copying to workdir
+	hg archive -R "${_pkgdir}" ${lib_workdir}
+}
+
+function validate() {
+	cd "${lib_srcdir}"
+	return 0
+}
+
+function teardown() {
+	unset _svn_url
+	unset _svn_rev
+	unset _name
+	unset _license
+}
+
+
+# ---
+
+#
+
+function build() {
+	cd "${lib_workdir}"
+	pwd
+
+	./configure --prefix "${libs_builddir}"
+	make
+	make install
+}

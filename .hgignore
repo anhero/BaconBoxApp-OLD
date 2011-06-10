@@ -39,7 +39,8 @@ Release
 #/obj/*
 #/bin/*
 
-#/libraries/*
+#libbuildtool ignore rules
+regexp:^libraries/.*/.*$
 
 #vim-style save file
 *~

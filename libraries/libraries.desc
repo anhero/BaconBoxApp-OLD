@@ -1,0 +1,10 @@
+#!/bin/bash
+#Libraries to build
+
+# If redbox is not available directly in libraries, we build it.
+if [[ ! -e redbox ]]; then
+	libraries=( ${libraries[@]-} 'redbox' )
+fi
+
+libraries=( ${libraries[@]-} 'sigly' )
+
