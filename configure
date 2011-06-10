@@ -13,6 +13,7 @@ if [ "${CMAKE}" == "" ]; then
 	echo "CMake is not correctly installed and is necessary to build this project." && exit 1
 fi
 
+# TODO: On release mode, do something that allows user to not have to use libbuildtool.
 LIBBUILDTOOL=$(which libbuildtool)
 if [ "${LIBBUILDTOOL}" == "" ]; then
 	echo "libbuildtool is not correctly installed and is necessary to build the dependencies of this project." && exit 1
