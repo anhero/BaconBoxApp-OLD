@@ -31,6 +31,22 @@ else()
 	set(EXECUTABLE_OUTPUT_PATH  ${RedBoxApp_BINARY_DIR}/bin/${CMAKE_BUILD_TYPE})
 endif("${CMAKE_GENERATOR}" STREQUAL "Xcode")
 
+
+#we build dependencies with libbuildtool (only if needed)
+if(iphone)
+	if(NOT IS_DIRECTORY ${RedBoxApp_SOURCE_DIR}/libraries/ios/universal)
+		execute_process(COMMAND	${RedBoxApp_SOURCE_DIR}/script/libbuildtool/iphone-universal)
+	endif(NOT IS_DIRECTORY ${RedBoxApp_SOURCE_DIR}/libraries/ios/universal)
+else()
+	if(NOT IS_DIRECTORY ${RedBoxApp_SOURCE_DIR}/libraries/current)
+	message(STATUS "${RedBoxApp_SOURCE_DIR}/script/libbuildtool/current")
+		execute_process(COMMAND	${RedBoxApp_SOURCE_DIR}/script/libbuildtool/current)
+	endif(NOT IS_DIRECTORY ${RedBoxApp_SOURCE_DIR}/libraries/current)
+endif(iphone)
+
+
+
+# Platform-specific configurations.
 if(iphone)
 	set(RedBoxApp_framework_list  "Foundation" "AudioToolBox" "AVFoundation" "CoreGraphics" "OpenAL" "QuartzCore" "UIKit" "OpenGLES")
 	foreach(framework ${RedBoxApp_framework_list})
