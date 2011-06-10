@@ -1,30 +1,23 @@
 cmake_minimum_required(VERSION 2.6)
 project(RedBoxApp)
 
+# Default build is SDL. If none set, set SDL
 if(NOT iphone AND NOT QT AND NOT SDL)
 	set(SDL 1)
 endif(NOT iphone AND NOT QT AND NOT SDL)
 
+# Include a useful function module
+set(CMAKE_MODULE_PATH "${RedBoxApp_SOURCE_DIR}/script/CMake/module/")
+include(Function)
 
-set(RedBox_directory ${RedBoxApp_SOURCE_DIR}/libraries/redbox/)
-if(EXISTS "${RedBox_directory}")
-	message(STATUS "RedBox libraries... found")
-else(EXISTS "${RedBox_directory}")
-	message(STATUS "RedBox libraries... not found")
-	message(FATAL_ERROR "${RedBox_directory} was not found.")
-endif(EXISTS "${RedBox_directory}")
-
-add_subdirectory(${RedBox_directory} ${RedBoxApp_BINARY_DIR}/RedBox)
-
-
-#We force the build type to be at least debug
+# We force the build type to be at least debug
 if(NOT CMAKE_BUILD_TYPE)
   SET(CMAKE_BUILD_TYPE Debug CACHE STRING
       "Choose the type of build, options are: None Debug Release RelWithDebInfo MinSizeRel."
       FORCE)
 endif(NOT CMAKE_BUILD_TYPE)
 
-#Define the DEBUG symbol if necessary.
+# Define the DEBUG symbol if necessary.
 if("${CMAKE_BUILD_TYPE}" STREQUAL "Debug")
 	ADD_DEFINITIONS("-DDEBUG")
 	if(NOT WIN32)
@@ -90,6 +83,12 @@ elseif(SDL)
 	list(APPEND RedBoxApp_IncludeDir_list ${OPENGL_INCLUDE_DIR})
 	list(APPEND RedBoxApp_libraries_list ${OPENGL_LIBRARY})
 
+	#pthreads seems to be only needed on Linux for SDL.
+	if("${CMAKE_SYSTEM}" MATCHES "Linux")
+		find_package (Threads)
+		list(APPEND RedBoxApp_libraries_list ${CMAKE_THREAD_LIBS_INIT})
+	endif("${CMAKE_SYSTEM}" MATCHES "Linux")
+
 	ADD_DEFINITIONS("-DSDL")
 
 	set(RedBoxApp_SDLSpecific_path ${RedBoxApp_SOURCE_DIR}/platform/SDL/)
@@ -120,16 +119,20 @@ list(APPEND RedBoxApp_headers ${RedBoxApp_application_headers})
 source_group(application FILES ${RedBoxApp_application_headers} ${RedBoxApp_application_sources})
 
 
-INCLUDE_DIRECTORIES(${RedBoxApp_IncludeDir_list})
+# Include directories
 INCLUDE_DIRECTORIES(${RedBoxApp_SOURCE_DIR}/application)
-INCLUDE_DIRECTORIES(${RedBox_BINARY_DIR}/Dependencies/include)
+INCLUDE_DIRECTORIES(${RedBoxApp_SOURCE_DIR}/libraries/current/include/)
+# System libraries include directories. (built beforehand)
+INCLUDE_DIRECTORIES(${RedBoxApp_IncludeDir_list})
 
-INCLUDE_DIRECTORIES(${RedBox_BINARY_DIR}/${CMAKE_BUILD_TYPE}/include)
+# Link directories
+   link_directories(${RedBoxApp_SOURCE_DIR}/libraries/current/lib/)
 
-
-link_directories(${RedBox_BINARY_DIR}/${CMAKE_BUILD_TYPE}/lib)
-link_directories(${RedBox_BINARY_DIR}/Dependencies/lib/)
-
+# Dev mode helper
+# If redbox is available as a directory in the libraries folder, we use its build.
+# Make sure that redbox is not also built using libbuildtool, this would be an undocumented comportment.
+INCLUDE_DIRECTORIES(${RedBoxApp_SOURCE_DIR}/libraries/redbox/build/${CMAKE_BUILD_TYPE}/include/)
+   link_directories(${RedBoxApp_SOURCE_DIR}/libraries/redbox/build/lib/${CMAKE_BUILD_TYPE})
 
 if(APPLE)
 	set_source_files_properties(
