@@ -13,7 +13,6 @@ if [ "${CMAKE}" == "" ]; then
 	echo "CMake is not correctly installed and is necessary to build this project." && exit 1
 fi
 
-# TODO: On release mode, do something that allows user to not have to use libbuildtool.
 LIBBUILDTOOL=$(which libbuildtool)
 if [ "${LIBBUILDTOOL}" == "" ]; then
 	echo "libbuildtool is not correctly installed and is necessary to build the dependencies of this project." && exit 1
@@ -24,7 +23,6 @@ function print_help() {
 	#@ function print_help
 	#@ Prints help.
 
-	local this="$(basename ${0})"
 	cat <<EOHELP
 Usage: $0 <options>
 
@@ -42,19 +40,36 @@ OPTIONS
                                  './configure -t iphoneSimulator 4.3' 
                              where 4.3 is the sdk version number.
     
+    --appname <name>       Sets the binary's name so it is different than
+                           RedBoxApp.
+
+    --compile-both         Configures RedBoxApp to also include RedBox in 
+                           the project. This is mainly used for RedBox 
+                           developpers who wants to have one project file.
+
     -G |--build-system | --generator Specify which Cmake generator to use	
 EOHELP
 }
 
 
-#Initializing parameters variable
+# Initializing parameters array
 params=""
-#Looping on the parameters
+
+# Parameters parsing
 while [ $# -gt 0 ];do
 	case "$1" in
 		"--help"|"-h"|"-?")
 			print_help
 			exit 0
+			;;
+		"--appname")
+			shift;
+			echo '>>' Application name: ${1}
+			export BINARY_NAME=$1
+			;;
+		"--compile-both")
+			echo '>>' Compiling RedBox with RedBoxApp
+			params=( ${params[@]} "-DINCLUDE_REDBOX=1" )
 			;;
 		"--target"|"-t")
 			shift;
@@ -68,8 +83,8 @@ while [ $# -gt 0 ];do
 			fi
 			;;
 		*)
-			#Keeping unknown parameters
-			params=( ${params[@]-} "${1}" )
+			# Keeping unknown parameters
+			params=( "${params[@]-}" "${1}" )
 		esac
 	shift;
 done
@@ -80,15 +95,16 @@ if [ -z "${target}" ]; then
 fi
 #Adding target to cache entries.
 params=( ${params[@]} "-D${target}=1" )
+params=( ${params[@]} "-DCURRENT_PLATFORM=${target}" )
 
 mkdir -p build
 cp ./script/CMake/Makefile/Makefile .
 
 configurePath="./script/CMake/configureScript"
 
-if [ "${target}" == "iphoneOS" ]; then
+if [[ "${target}" == "iphoneOS" ]]; then
 	"${configurePath}/configure-iphone" "${params[@]}"
-elif [  "${target}" == "iphoneSimulator" ]; then
+elif [[ "${target}" == "iphoneSimulator" ]]; then
 	"${configurePath}/configure-iphone-simulator" "${params[@]}"
 else
 	"${configurePath}/configure-current" "${params[@]}"
