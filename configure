@@ -75,6 +75,7 @@ while [ $# -gt 0 ];do
 			shift;
 			target=$1
 			if [ "${target}" == "iphoneOS" -o "${target}" == "iphoneSimulator" ] ; then
+				target=iphone
 				shift;
 				if [ "${1}" == "" ]; then
 					echo "This target need a sdk version number. See ./configure --help for usage." && exit 1
