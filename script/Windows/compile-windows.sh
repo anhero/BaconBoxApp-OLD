@@ -24,11 +24,12 @@ if [ ! -d libraries/redbox/libraries/current ]; then
 	echo "Libbuildtool wasn't called; calling it."
 	ORIGDIR="$(pwd)"
 	cd libraries/redbox/libraries
-	libbuildtool || ( echo Problem with libbuildtoo, bailing out. ; exit 1)
+	libbuildtool || ( echo Problem with libbuildtool, bailing out. ; exit 1)
 	cp -prf "$(uname -s)/$(uname -m)" current
 	echo "Back to $ORIGDIR"
 	cd "$ORIGDIR"
 fi
 
 
+cd build
 mingw32-make

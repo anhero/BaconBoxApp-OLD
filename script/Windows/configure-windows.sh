@@ -50,5 +50,5 @@ OPENALDIR="/c/Program Files/OpenAL 1.1 SDK/"
 export _BASH_INTERPRETER=$(which bash)
 
 PATH="$NEWPATH"
-cmake -DSDL=1 -G"MinGW Makefiles" ..
+cmake -DSDL=1 -DINCLUDE_REDBOX=1 -G"MinGW Makefiles" ..
 PATH="$ORIGPATH"
