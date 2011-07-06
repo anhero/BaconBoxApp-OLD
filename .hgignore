@@ -47,3 +47,5 @@ regexp:^libraries/.*/.*$
 
 #SVN repo add to our project
 .svn
+
+glob:libraries/redbox
