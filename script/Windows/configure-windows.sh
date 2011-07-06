@@ -2,6 +2,9 @@
 
 # This script calls cmake properly for the MinGW environment
 
+export CFLAGS="-static"
+export LDFLAGS="-static"
+
 cd "$1"
 shift
 
