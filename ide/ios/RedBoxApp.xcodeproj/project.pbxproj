@@ -14,16 +14,16 @@
 		511276D612FF02FE008EAB02 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 511276D512FF02FE008EAB02 /* CoreGraphics.framework */; };
 		511276D812FF02FE008EAB02 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 511276D712FF02FE008EAB02 /* QuartzCore.framework */; };
 		511276DA12FF02FE008EAB02 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 511276D912FF02FE008EAB02 /* OpenGLES.framework */; };
-		5112772812FF1DA4008EAB02 /* EAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5112771612FF1DA4008EAB02 /* EAGLView.m */; };
-		5112772912FF1DA4008EAB02 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5112772012FF1DA4008EAB02 /* main.m */; };
-		5112772A12FF1DA4008EAB02 /* RedBoxApp-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5112772112FF1DA4008EAB02 /* RedBoxApp-Info.plist */; };
-		5112772B12FF1DA4008EAB02 /* RedBoxAppAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5112772412FF1DA4008EAB02 /* RedBoxAppAppDelegate.m */; };
-		5112772C12FF1DA4008EAB02 /* RedBoxAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5112772612FF1DA4008EAB02 /* RedBoxAppViewController.m */; };
-		5115512412FF54A8003E656A /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5112771912FF1DA4008EAB02 /* MainWindow.xib */; };
-		5115512912FF54AA003E656A /* RedBoxAppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5112771B12FF1DA4008EAB02 /* RedBoxAppViewController.xib */; };
-		5115512A12FF54B9003E656A /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5112771E12FF1DA4008EAB02 /* MainWindow-iPad.xib */; };
+		512AD25113C62F54009D9324 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 512AD25013C62F54009D9324 /* main.cpp */; };
+		514E76DE13C654B20024ADAB /* EAGLView.h in Headers */ = {isa = PBXBuildFile; fileRef = 514E76D813C654B20024ADAB /* EAGLView.h */; };
+		514E76DF13C654B20024ADAB /* EAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 514E76D913C654B20024ADAB /* EAGLView.m */; };
+		514E76E013C654B20024ADAB /* RedBoxAppAppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 514E76DA13C654B20024ADAB /* RedBoxAppAppDelegate.h */; };
+		514E76E113C654B20024ADAB /* RedBoxAppAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 514E76DB13C654B20024ADAB /* RedBoxAppAppDelegate.m */; };
+		514E76E213C654B20024ADAB /* RedBoxAppViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 514E76DC13C654B20024ADAB /* RedBoxAppViewController.h */; };
+		514E76E313C654B20024ADAB /* RedBoxAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 514E76DD13C654B20024ADAB /* RedBoxAppViewController.m */; };
 		51578C821301BEAB009862CE /* libRedBox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 515EB55412FF3C12004FB469 /* libRedBox.a */; };
 		51C96A59132D459000A9B088 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C96A58132D459000A9B088 /* OpenAL.framework */; };
+		51DA4B9613C6522500EE1031 /* RedBoxApp-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 51DA4B9513C6522500EE1031 /* RedBoxApp-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,23 +52,17 @@
 		511276D512FF02FE008EAB02 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		511276D712FF02FE008EAB02 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		511276D912FF02FE008EAB02 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
-		5112771512FF1DA4008EAB02 /* EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
-		5112771612FF1DA4008EAB02 /* EAGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAGLView.m; sourceTree = "<group>"; };
-		5112771812FF1DA4008EAB02 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5112771A12FF1DA4008EAB02 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		5112771C12FF1DA4008EAB02 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = en; path = en.lproj/RedBoxAppViewController.xib; sourceTree = "<group>"; };
-		5112771F12FF1DA4008EAB02 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = en; path = "en.lproj/MainWindow-iPad.xib"; sourceTree = "<group>"; };
-		5112772012FF1DA4008EAB02 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5112772112FF1DA4008EAB02 /* RedBoxApp-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "RedBoxApp-Info.plist"; sourceTree = "<group>"; };
-		5112772212FF1DA4008EAB02 /* RedBoxApp-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RedBoxApp-Prefix.pch"; sourceTree = "<group>"; };
-		5112772312FF1DA4008EAB02 /* RedBoxAppAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedBoxAppAppDelegate.h; sourceTree = "<group>"; };
-		5112772412FF1DA4008EAB02 /* RedBoxAppAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedBoxAppAppDelegate.m; sourceTree = "<group>"; };
-		5112772512FF1DA4008EAB02 /* RedBoxAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedBoxAppViewController.h; sourceTree = "<group>"; };
-		5112772612FF1DA4008EAB02 /* RedBoxAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedBoxAppViewController.m; sourceTree = "<group>"; };
-		5112773012FF1DD3008EAB02 /* Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Loader.h; sourceTree = "<group>"; };
 		5112773A12FF2011008EAB02 /* RedBox.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RedBox.xcodeproj; path = redbox/ide/Xcode/RedBox.xcodeproj; sourceTree = "<group>"; };
+		512AD25013C62F54009D9324 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		514E76D813C654B20024ADAB /* EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
+		514E76D913C654B20024ADAB /* EAGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAGLView.m; sourceTree = "<group>"; };
+		514E76DA13C654B20024ADAB /* RedBoxAppAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedBoxAppAppDelegate.h; sourceTree = "<group>"; };
+		514E76DB13C654B20024ADAB /* RedBoxAppAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedBoxAppAppDelegate.m; sourceTree = "<group>"; };
+		514E76DC13C654B20024ADAB /* RedBoxAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedBoxAppViewController.h; sourceTree = "<group>"; };
+		514E76DD13C654B20024ADAB /* RedBoxAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedBoxAppViewController.m; sourceTree = "<group>"; };
 		51C96A56132D457100A9B088 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		51C96A58132D459000A9B088 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		51DA4B9513C6522500EE1031 /* RedBoxApp-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "RedBoxApp-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +96,10 @@
 		511276C212FF02FD008EAB02 = {
 			isa = PBXGroup;
 			children = (
+				51DA4B9213C6522500EE1031 /* platform */,
 				5112772D12FF1DD3008EAB02 /* application */,
 				510C25CA13019BF100CFE26E /* resources */,
 				5112773312FF1DF3008EAB02 /* libraries */,
-				5112771412FF1DA4008EAB02 /* xcode_specific */,
 				511276D012FF02FE008EAB02 /* Frameworks */,
 				511276CE12FF02FE008EAB02 /* Products */,
 			);
@@ -135,30 +129,10 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		5112771412FF1DA4008EAB02 /* xcode_specific */ = {
-			isa = PBXGroup;
-			children = (
-				5112771512FF1DA4008EAB02 /* EAGLView.h */,
-				5112771612FF1DA4008EAB02 /* EAGLView.m */,
-				5112771712FF1DA4008EAB02 /* InfoPlist.strings */,
-				5112771912FF1DA4008EAB02 /* MainWindow.xib */,
-				5112771E12FF1DA4008EAB02 /* MainWindow-iPad.xib */,
-				5112771B12FF1DA4008EAB02 /* RedBoxAppViewController.xib */,
-				5112772012FF1DA4008EAB02 /* main.m */,
-				5112772112FF1DA4008EAB02 /* RedBoxApp-Info.plist */,
-				5112772212FF1DA4008EAB02 /* RedBoxApp-Prefix.pch */,
-				5112772312FF1DA4008EAB02 /* RedBoxAppAppDelegate.h */,
-				5112772412FF1DA4008EAB02 /* RedBoxAppAppDelegate.m */,
-				5112772512FF1DA4008EAB02 /* RedBoxAppViewController.h */,
-				5112772612FF1DA4008EAB02 /* RedBoxAppViewController.m */,
-			);
-			path = xcode_specific;
-			sourceTree = SOURCE_ROOT;
-		};
 		5112772D12FF1DD3008EAB02 /* application */ = {
 			isa = PBXGroup;
 			children = (
-				5112773012FF1DD3008EAB02 /* Loader.h */,
+				512AD25013C62F54009D9324 /* main.cpp */,
 			);
 			name = application;
 			path = ../../application;
@@ -189,6 +163,29 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		51DA4B9213C6522500EE1031 /* platform */ = {
+			isa = PBXGroup;
+			children = (
+				51DA4B9413C6522500EE1031 /* ios */,
+			);
+			name = platform;
+			path = ../../platform;
+			sourceTree = "<group>";
+		};
+		51DA4B9413C6522500EE1031 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				514E76D813C654B20024ADAB /* EAGLView.h */,
+				514E76D913C654B20024ADAB /* EAGLView.m */,
+				514E76DA13C654B20024ADAB /* RedBoxAppAppDelegate.h */,
+				514E76DB13C654B20024ADAB /* RedBoxAppAppDelegate.m */,
+				514E76DC13C654B20024ADAB /* RedBoxAppViewController.h */,
+				514E76DD13C654B20024ADAB /* RedBoxAppViewController.m */,
+				51DA4B9513C6522500EE1031 /* RedBoxApp-Info.plist */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -196,6 +193,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				514E76DE13C654B20024ADAB /* EAGLView.h in Headers */,
+				514E76E013C654B20024ADAB /* RedBoxAppAppDelegate.h in Headers */,
+				514E76E213C654B20024ADAB /* RedBoxAppViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,10 +267,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5112772A12FF1DA4008EAB02 /* RedBoxApp-Info.plist in Resources */,
-				5115512912FF54AA003E656A /* RedBoxAppViewController.xib in Resources */,
-				5115512A12FF54B9003E656A /* MainWindow-iPad.xib in Resources */,
-				5115512412FF54A8003E656A /* MainWindow.xib in Resources */,
+				51DA4B9613C6522500EE1031 /* RedBoxApp-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,10 +278,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5112772812FF1DA4008EAB02 /* EAGLView.m in Sources */,
-				5112772912FF1DA4008EAB02 /* main.m in Sources */,
-				5112772B12FF1DA4008EAB02 /* RedBoxAppAppDelegate.m in Sources */,
-				5112772C12FF1DA4008EAB02 /* RedBoxAppViewController.m in Sources */,
+				512AD25113C62F54009D9324 /* main.cpp in Sources */,
+				514E76DF13C654B20024ADAB /* EAGLView.m in Sources */,
+				514E76E113C654B20024ADAB /* RedBoxAppAppDelegate.m in Sources */,
+				514E76E313C654B20024ADAB /* RedBoxAppViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,42 +294,6 @@
 			targetProxy = 510C261913019E9500CFE26E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		5112771712FF1DA4008EAB02 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5112771812FF1DA4008EAB02 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		5112771912FF1DA4008EAB02 /* MainWindow.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5112771A12FF1DA4008EAB02 /* en */,
-			);
-			name = MainWindow.xib;
-			sourceTree = "<group>";
-		};
-		5112771B12FF1DA4008EAB02 /* RedBoxAppViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5112771C12FF1DA4008EAB02 /* en */,
-			);
-			name = RedBoxAppViewController.xib;
-			sourceTree = "<group>";
-		};
-		5112771E12FF1DA4008EAB02 /* MainWindow-iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5112771F12FF1DA4008EAB02 /* en */,
-			);
-			name = "MainWindow-iPad.xib";
-			path = iPad;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		511276F712FF02FE008EAB02 /* Debug */ = {
@@ -381,9 +342,10 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "xcode_specific/RedBoxApp-Prefix.pch";
+				GCC_PREFIX_HEADER = "";
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/include\"";
+				INFOPLIST_FILE = "../../platform/ios/RedBoxApp-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
@@ -396,9 +358,10 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "xcode_specific/RedBoxApp-Prefix.pch";
+				GCC_PREFIX_HEADER = "";
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/include\"";
+				INFOPLIST_FILE = "../../platform/ios/RedBoxApp-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "";
 				VALIDATE_PRODUCT = YES;

@@ -3,8 +3,8 @@
 #import "EAGLView.h"
 
 #import "RedBoxAppViewController.h"
-#include "Loader.h"
 #include <RedBox.h>
+#include <RedBox/GraphicDriver.h>
 @implementation RedBoxAppAppDelegate
 
 
@@ -14,12 +14,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-	// Override point for customization after application launch.
-	self.window.rootViewController = self.viewController;
-	
-	//RedBox::RedBoxEngine::initializeEngine([UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
-	RedBox::Loader::load();
-
+	CGRect screenBounds = [[UIScreen mainScreen] bounds];
+    self.window = [[[UIWindow alloc] initWithFrame: screenBounds] autorelease];
+    
+    self.viewController = [[[RedBoxAppViewController alloc] initWithFrame:screenBounds] autorelease];
+    self.window.rootViewController = self.viewController;
+    [window addSubview:viewController.view];
+    [window makeKeyAndVisible];
+    RedBox::GraphicDriver::initializeGraphicDriver(RedBox::Engine::getScreenWidth(), RedBox::Engine::getScreenHeight());
     return YES;
 }
 

@@ -14,8 +14,11 @@
 
 @synthesize animating, context, displayLink;
 
-- (void)awakeFromNib
+- (id)initWithFrame:(CGRect)frame
 {
+    self.view = [[[EAGLView alloc] initWithFrame:frame] autorelease];
+    //self.view.clipsToBounds = YES;
+    
     EAGLContext *aContext = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES1];
     
    
@@ -33,6 +36,7 @@
     animating = FALSE;
     animationFrameInterval = 1;
     self.displayLink = nil;
+    return self;
 }
 
 - (void)dealloc
