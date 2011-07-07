@@ -49,3 +49,4 @@ regexp:^libraries/.*/.*$
 .svn
 
 glob:libraries/redbox
+glob:libraries/current
