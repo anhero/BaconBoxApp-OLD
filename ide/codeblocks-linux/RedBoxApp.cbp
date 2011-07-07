@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="RedBoxApp" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../../build/bin/Debug/RedBoxApp" prefix_auto="1" extension_auto="1" />
+				<Option object_output="../../build/obj/Debug/" />
+				<Option external_deps="../../libraries/current/lib/libRedBox.a;" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="../../libraries/current/include" />
+		</Compiler>
+		<Linker>
+			<Add library="../../libraries/current/lib/libRedBox.a" />
+			<Add library="GL" />
+			<Add library="GLU" />
+			<Add library="SM" />
+			<Add library="ICE" />
+			<Add library="X11" />
+			<Add library="Xext" />
+			<Add library="pthread" />
+			<Add directory="../../libraries/current/lib" />
+		</Linker>
+		<ExtraCommands>
+			<Add before='cp -prf &quot;../../resources&quot; &quot;$(TARGET_OUTPUT_DIR)/&quot;' />
+			<Mode after="always" />
+		</ExtraCommands>
+		<Unit filename="../../application/Loader.h" />
+		<Unit filename="../../application/main.cpp" />
+		<Extensions>
+			<code_completion>
+				<search_path add="..\..\libraries\current\include" />
+			</code_completion>
+			<debugger />
+			<envvars />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
