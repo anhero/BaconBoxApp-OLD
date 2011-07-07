@@ -15,15 +15,9 @@
 		511276D812FF02FE008EAB02 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 511276D712FF02FE008EAB02 /* QuartzCore.framework */; };
 		511276DA12FF02FE008EAB02 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 511276D912FF02FE008EAB02 /* OpenGLES.framework */; };
 		512AD25113C62F54009D9324 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 512AD25013C62F54009D9324 /* main.cpp */; };
-		514E76DE13C654B20024ADAB /* EAGLView.h in Headers */ = {isa = PBXBuildFile; fileRef = 514E76D813C654B20024ADAB /* EAGLView.h */; };
-		514E76DF13C654B20024ADAB /* EAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 514E76D913C654B20024ADAB /* EAGLView.m */; };
-		514E76E013C654B20024ADAB /* RedBoxAppAppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 514E76DA13C654B20024ADAB /* RedBoxAppAppDelegate.h */; };
-		514E76E113C654B20024ADAB /* RedBoxAppAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 514E76DB13C654B20024ADAB /* RedBoxAppAppDelegate.m */; };
-		514E76E213C654B20024ADAB /* RedBoxAppViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 514E76DC13C654B20024ADAB /* RedBoxAppViewController.h */; };
-		514E76E313C654B20024ADAB /* RedBoxAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 514E76DD13C654B20024ADAB /* RedBoxAppViewController.m */; };
 		51578C821301BEAB009862CE /* libRedBox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 515EB55412FF3C12004FB469 /* libRedBox.a */; };
+		51C1F0DB13C66ACB00C2269A /* RedBoxApp-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 51C1F0DA13C66ACB00C2269A /* RedBoxApp-Info.plist */; };
 		51C96A59132D459000A9B088 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C96A58132D459000A9B088 /* OpenAL.framework */; };
-		51DA4B9613C6522500EE1031 /* RedBoxApp-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 51DA4B9513C6522500EE1031 /* RedBoxApp-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,15 +48,9 @@
 		511276D912FF02FE008EAB02 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		5112773A12FF2011008EAB02 /* RedBox.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RedBox.xcodeproj; path = redbox/ide/Xcode/RedBox.xcodeproj; sourceTree = "<group>"; };
 		512AD25013C62F54009D9324 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		514E76D813C654B20024ADAB /* EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
-		514E76D913C654B20024ADAB /* EAGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAGLView.m; sourceTree = "<group>"; };
-		514E76DA13C654B20024ADAB /* RedBoxAppAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedBoxAppAppDelegate.h; sourceTree = "<group>"; };
-		514E76DB13C654B20024ADAB /* RedBoxAppAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedBoxAppAppDelegate.m; sourceTree = "<group>"; };
-		514E76DC13C654B20024ADAB /* RedBoxAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedBoxAppViewController.h; sourceTree = "<group>"; };
-		514E76DD13C654B20024ADAB /* RedBoxAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedBoxAppViewController.m; sourceTree = "<group>"; };
+		51C1F0DA13C66ACB00C2269A /* RedBoxApp-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "RedBoxApp-Info.plist"; sourceTree = "<group>"; };
 		51C96A56132D457100A9B088 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		51C96A58132D459000A9B088 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
-		51DA4B9513C6522500EE1031 /* RedBoxApp-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "RedBoxApp-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,13 +163,7 @@
 		51DA4B9413C6522500EE1031 /* ios */ = {
 			isa = PBXGroup;
 			children = (
-				514E76D813C654B20024ADAB /* EAGLView.h */,
-				514E76D913C654B20024ADAB /* EAGLView.m */,
-				514E76DA13C654B20024ADAB /* RedBoxAppAppDelegate.h */,
-				514E76DB13C654B20024ADAB /* RedBoxAppAppDelegate.m */,
-				514E76DC13C654B20024ADAB /* RedBoxAppViewController.h */,
-				514E76DD13C654B20024ADAB /* RedBoxAppViewController.m */,
-				51DA4B9513C6522500EE1031 /* RedBoxApp-Info.plist */,
+				51C1F0DA13C66ACB00C2269A /* RedBoxApp-Info.plist */,
 			);
 			path = ios;
 			sourceTree = "<group>";
@@ -193,9 +175,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				514E76DE13C654B20024ADAB /* EAGLView.h in Headers */,
-				514E76E013C654B20024ADAB /* RedBoxAppAppDelegate.h in Headers */,
-				514E76E213C654B20024ADAB /* RedBoxAppViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,7 +246,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51DA4B9613C6522500EE1031 /* RedBoxApp-Info.plist in Resources */,
+				51C1F0DB13C66ACB00C2269A /* RedBoxApp-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,9 +258,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				512AD25113C62F54009D9324 /* main.cpp in Sources */,
-				514E76DF13C654B20024ADAB /* EAGLView.m in Sources */,
-				514E76E113C654B20024ADAB /* RedBoxAppAppDelegate.m in Sources */,
-				514E76E313C654B20024ADAB /* RedBoxAppViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
