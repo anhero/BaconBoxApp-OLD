@@ -17,8 +17,8 @@ License information
 ===================
 For license details about RedBox, see the wiki or the license.txt file.
 
-The example main.cpp and Loader.h file are released as either Public Domain or
-MIT License, whichever better fits your needs.
+The example main.cpp file is released as either Public Domain or MIT License,
+whichever better fits your needs.
 
 More details
 ============
@@ -38,7 +38,8 @@ to compile using a Makefile.
 Folder structure
 ----------------
 	/application/    -> Your game code goes there.
-	     Loader.h    -> Some start-up configurations for RedBox are made there.
+	    main.cpp     -> Startup point of the program and configurations for
+	                    RedBox are made there.
 
 	/resources/      -> Your resources goes there. (e.g Sounds, Art, etc.)
 
