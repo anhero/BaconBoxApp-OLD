@@ -15,24 +15,24 @@
 		511276D812FF02FE008EAB02 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 511276D712FF02FE008EAB02 /* QuartzCore.framework */; };
 		511276DA12FF02FE008EAB02 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 511276D912FF02FE008EAB02 /* OpenGLES.framework */; };
 		512AD25113C62F54009D9324 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 512AD25013C62F54009D9324 /* main.cpp */; };
-		51578C821301BEAB009862CE /* libRedBox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 515EB55412FF3C12004FB469 /* libRedBox.a */; };
 		51C1F0DB13C66ACB00C2269A /* RedBoxApp-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 51C1F0DA13C66ACB00C2269A /* RedBoxApp-Info.plist */; };
+		51C1F1A213C74C8500C2269A /* libRedBox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C1F1A113C74C7C00C2269A /* libRedBox.a */; };
 		51C96A59132D459000A9B088 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C96A58132D459000A9B088 /* OpenAL.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		510C261913019E9500CFE26E /* PBXContainerItemProxy */ = {
+		51C1F1A013C74C7C00C2269A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 5112773A12FF2011008EAB02 /* RedBox.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 5192774611D5B0F100C65B15;
-			remoteInfo = RedBox;
-		};
-		515EB55312FF3C12004FB469 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5112773A12FF2011008EAB02 /* RedBox.xcodeproj */;
+			containerPortal = 51C1F19913C74C7C00C2269A /* RedBox.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 515EB50512FF34AA004FB469;
+			remoteInfo = RedBox;
+		};
+		51C1F1A313C74C8800C2269A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 51C1F19913C74C7C00C2269A /* RedBox.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5192774611D5B0F100C65B15;
 			remoteInfo = RedBox;
 		};
 /* End PBXContainerItemProxy section */
@@ -46,9 +46,9 @@
 		511276D512FF02FE008EAB02 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		511276D712FF02FE008EAB02 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		511276D912FF02FE008EAB02 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
-		5112773A12FF2011008EAB02 /* RedBox.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RedBox.xcodeproj; path = redbox/ide/Xcode/RedBox.xcodeproj; sourceTree = "<group>"; };
 		512AD25013C62F54009D9324 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		51C1F0DA13C66ACB00C2269A /* RedBoxApp-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "RedBoxApp-Info.plist"; sourceTree = "<group>"; };
+		51C1F19913C74C7C00C2269A /* RedBox.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RedBox.xcodeproj; path = redbox/ide/ios/RedBox.xcodeproj; sourceTree = "<group>"; };
 		51C96A56132D457100A9B088 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		51C96A58132D459000A9B088 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -58,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51C1F1A213C74C8500C2269A /* libRedBox.a in Frameworks */,
 				5103332913326EB20097CD96 /* AVFoundation.framework in Frameworks */,
 				51C96A59132D459000A9B088 /* OpenAL.framework in Frameworks */,
 				510C25DA13019C7D00CFE26E /* libz.dylib in Frameworks */,
@@ -66,7 +67,6 @@
 				511276D612FF02FE008EAB02 /* CoreGraphics.framework in Frameworks */,
 				511276D812FF02FE008EAB02 /* QuartzCore.framework in Frameworks */,
 				511276DA12FF02FE008EAB02 /* OpenGLES.framework in Frameworks */,
-				51578C821301BEAB009862CE /* libRedBox.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,15 +138,15 @@
 		51589DAD12FF329C00834D4D /* redbox */ = {
 			isa = PBXGroup;
 			children = (
-				5112773A12FF2011008EAB02 /* RedBox.xcodeproj */,
+				51C1F19913C74C7C00C2269A /* RedBox.xcodeproj */,
 			);
 			name = redbox;
 			sourceTree = "<group>";
 		};
-		515EB54E12FF3C12004FB469 /* Products */ = {
+		51C1F19A13C74C7C00C2269A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				515EB55412FF3C12004FB469 /* libRedBox.a */,
+				51C1F1A113C74C7C00C2269A /* libRedBox.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -193,7 +193,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				510C261A13019E9500CFE26E /* PBXTargetDependency */,
+				51C1F1A413C74C8800C2269A /* PBXTargetDependency */,
 			);
 			name = RedBoxApp;
 			productName = RedBoxApp;
@@ -220,8 +220,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 515EB54E12FF3C12004FB469 /* Products */;
-					ProjectRef = 5112773A12FF2011008EAB02 /* RedBox.xcodeproj */;
+					ProductGroup = 51C1F19A13C74C7C00C2269A /* Products */;
+					ProjectRef = 51C1F19913C74C7C00C2269A /* RedBox.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -232,11 +232,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		515EB55412FF3C12004FB469 /* libRedBox.a */ = {
+		51C1F1A113C74C7C00C2269A /* libRedBox.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libRedBox.a;
-			remoteRef = 515EB55312FF3C12004FB469 /* PBXContainerItemProxy */;
+			remoteRef = 51C1F1A013C74C7C00C2269A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -264,10 +264,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		510C261A13019E9500CFE26E /* PBXTargetDependency */ = {
+		51C1F1A413C74C8800C2269A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = RedBox;
-			targetProxy = 510C261913019E9500CFE26E /* PBXContainerItemProxy */;
+			targetProxy = 51C1F1A313C74C8800C2269A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
