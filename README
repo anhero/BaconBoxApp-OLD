@@ -22,6 +22,19 @@ MIT License, whichever better fits your needs.
 
 More details
 ============
+
+How to use
+----------
+A release of this project should include the pre-built RedBox library and all
+the necessary components.
+
+To use the RedBox Engine with this project, you only need to find a project
+matching your favorite IDE in the ide folder. From there, you should only need
+to start coding and compiling using your IDE, nothing more.
+
+If you are using linux or another unix-like platform, you can make use of cmake
+to compile using a Makefile.
+
 Folder structure
 ----------------
 	/application/    -> Your game code goes there.
