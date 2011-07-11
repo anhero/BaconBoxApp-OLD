@@ -17,17 +17,15 @@ HEADERS  += $$PWD/../../application/**.h \
 
 copyResources.target = customtarget
 macx {
-	copyResources.commands += mkdir -p $$OUT_PWD/$${TARGET}.app/Contents/Resources/
-	copyResources.commands += cp -vprf "$$PWD/../../resources/*" $$OUT_PWD/$${TARGET}.app/Contents/Resources/
+	copyResources.commands += mkdir -p "$$DESTDIR/$${TARGET}.app/Contents/Resources/";
+	copyResources.commands += cp -vprf "$$PWD/../../resources/*" "$$DESTDIR/$${TARGET}.app/Contents/Resources/";
 }
 unix:!mac{
 	copyResources.commands += mkdir -p "$$DESTDIR/resources";
-	copyResources.commands += cp -vprf "$$PWD/../../resources" "$$DESTDIR/"
+	copyResources.commands += cp -vprf "$$PWD/../../resources" "$$DESTDIR/";
 }
 QMAKE_EXTRA_TARGETS += copyResources
 PRE_TARGETDEPS += customtarget
-
-
 
 
 # ------------------------------------------------------------------------------
