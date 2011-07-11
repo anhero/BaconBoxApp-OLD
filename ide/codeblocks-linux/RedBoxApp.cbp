@@ -33,6 +33,7 @@
 			<Add directory="../../libraries/current/lib" />
 		</Linker>
 		<ExtraCommands>
+			<Add before='mkdir -p &quot;$(TARGET_OUTPUT_DIR)/&quot;' />
 			<Add before='cp -prf &quot;../../resources&quot; &quot;$(TARGET_OUTPUT_DIR)/&quot;' />
 			<Mode after="always" />
 		</ExtraCommands>
