@@ -41,6 +41,10 @@ LIBS += -L$$PWD/../../libraries/current/lib/
 # When in "developer-mode"
 LIBS += -L$$PWD/../../libraries/redbox/build/lib/Debug/
 
+macx {
+	INCLUDEPATH +=  $$PWD/../../libraries/redbox-osx/include
+	LIBS += -L$$PWD/../../libraries/redbox-osx/
+}
 
 LIBS += -lRedBox
 
