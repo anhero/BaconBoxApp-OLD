@@ -17,8 +17,8 @@ HEADERS  += $$PWD/../../application/**.h \
 
 copyResources.target = copyResourcesTarget
 macx {
-        copyResources.commands += mkdir -p "$$DESTDIR/$${TARGET}.app/Contents/Resources/";
-        copyResources.commands += cp -vpRf "$$PWD/../../resources/" "$$DESTDIR/$${TARGET}.app/Contents/Resources/";
+	copyResources.commands += mkdir -p "$$DESTDIR/$${TARGET}.app/Contents/Resources/";
+	copyResources.commands += cp -vpRf "$$PWD/../../resources/" "$$DESTDIR/$${TARGET}.app/Contents/Resources/";
 }
 unix:!mac{
 	copyResources.commands += mkdir -p "$$DESTDIR/resources";
