@@ -1,6 +1,4 @@
-
 #include <RedBox.h>
-using namespace RedBox;
 
 int main(int argc, char *argv[]) {
 	// Initialize RedBox
