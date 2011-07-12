@@ -1,5 +1,8 @@
 syntax: glob
 
+Makefile
+Icon?
+
 #Generated Doc
 glob:meta/documentation/generated/
 
