@@ -106,8 +106,8 @@ popd
 
 echo Archiving
 
-tar cjf "${project_name}-${print_version}.tar.bz2" "${project_name}-${print_version}"
+tar cjf "${project_name}-${print_version}-src.tar.bz2" "${project_name}-${print_version}"
 
 echo Done.
 
-ls -l "${project_name}-${print_version}.tar.bz2"
+ls -l "${project_name}-${print_version}-src.tar.bz2"
