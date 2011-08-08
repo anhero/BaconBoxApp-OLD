@@ -40,6 +40,10 @@ OPTIONS
                                  './configure -t iphoneSimulator 4.3' 
                              where 4.3 is the sdk version number.
     
+    --projectname <name>   Sets the projects's name so it is different 
+                           than RedBoxApp. This will also set appname to
+                           this name if not overriden with --appname.
+
     --appname <name>       Sets the binary's name so it is different than
                            RedBoxApp.
 
@@ -61,6 +65,11 @@ while [ $# -gt 0 ];do
 		"--help"|"-h"|"-?")
 			print_help
 			exit 0
+			;;
+		"--projectname")
+			shift;
+			echo '>>' Application name: ${1}
+			export PROJECT_NAME=$1
 			;;
 		"--appname")
 			shift;
