@@ -19,7 +19,7 @@ endif("${CMAKE_SYSTEM}" MATCHES "Linux")
 
 ADD_DEFINITIONS("-DSDL")
 
-set(RedBoxApp_SDLSpecific_path ${RedBoxApp_SOURCE_DIR}/platform/SDL/)
+set(RedBoxApp_SDLSpecific_path ${${CMAKE_PROJECT_NAME}_SOURCE_DIR}/platform/SDL/)
 
 file(GLOB RedBoxApp_SDL_sources ${RedBoxApp_SDLSpecific_path}/*.cpp)
 file(GLOB RedBoxApp_SDL_headers ${RedBoxApp_SDLSpecific_path}/*.h)
