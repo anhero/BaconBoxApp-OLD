@@ -121,12 +121,9 @@ if(INCLUDE_REDBOX)
 endif(INCLUDE_REDBOX)
 
 if(APPLE)
-	set_source_files_properties(
-	${RedBoxApp_resources}
-	 PROPERTIES
-	  MACOSX_PACKAGE_LOCATION Resources
-	)
-
+	# According to CMake's documentation, the MACOSX_PACKAGE_LOCATION is built like this:
+	#   For bundles the content folder is "<name>.app/Contents" 
+	copy(${${CMAKE_PROJECT_NAME}_SOURCE_DIR}/resources ${EXECUTABLE_OUTPUT_PATH}/${CMAKE_PROJECT_NAME}.app/Contents/Resources)
 else()
 	copy(${${CMAKE_PROJECT_NAME}_SOURCE_DIR}/resources ${EXECUTABLE_OUTPUT_PATH}/resources)
 endif(APPLE)
