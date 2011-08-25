@@ -123,7 +123,12 @@ endif(INCLUDE_REDBOX)
 if(APPLE)
 	# According to CMake's documentation, the MACOSX_PACKAGE_LOCATION is built like this:
 	#   For bundles the content folder is "<name>.app/Contents" 
-	copy(${${CMAKE_PROJECT_NAME}_SOURCE_DIR}/resources ${EXECUTABLE_OUTPUT_PATH}/${CMAKE_PROJECT_NAME}.app/Contents/Resources)
+	# Because we removed the CMAKE_BUILD_TYPE for xcode, we have to put it back.
+	if("${CMAKE_GENERATOR}" STREQUAL "Xcode")
+		copy(${${CMAKE_PROJECT_NAME}_SOURCE_DIR}/resources ${EXECUTABLE_OUTPUT_PATH}/${CMAKE_BUILD_TYPE}/${CMAKE_PROJECT_NAME}.app/Contents/Resources)
+	else()
+		copy(${${CMAKE_PROJECT_NAME}_SOURCE_DIR}/resources ${EXECUTABLE_OUTPUT_PATH}/${CMAKE_PROJECT_NAME}.app/Contents/Resources)
+	endif("${CMAKE_GENERATOR}" STREQUAL "Xcode")
 else()
 	copy(${${CMAKE_PROJECT_NAME}_SOURCE_DIR}/resources ${EXECUTABLE_OUTPUT_PATH}/resources)
 endif(APPLE)
