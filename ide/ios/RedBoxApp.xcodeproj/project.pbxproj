@@ -185,6 +185,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 511276F912FF02FE008EAB02 /* Build configuration list for PBXNativeTarget "RedBoxApp" */;
 			buildPhases = (
+				51FB253D1427AA5E009E7B4D /* libbuildtool */,
 				511276C912FF02FD008EAB02 /* Sources */,
 				511276CA12FF02FD008EAB02 /* Frameworks */,
 				511276CB12FF02FD008EAB02 /* Resources */,
@@ -251,6 +252,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		51FB253D1427AA5E009E7B4D /* libbuildtool */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = libbuildtool;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../../script/libbuildtool/iphone-universal\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		511276C912FF02FD008EAB02 /* Sources */ = {
