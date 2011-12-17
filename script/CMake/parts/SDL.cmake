@@ -14,7 +14,7 @@ list(APPEND RedBoxApp_libraries_list ${OPENGL_LIBRARY})
 #pthreads seems to be only needed on Linux for SDL.
 if("${CMAKE_SYSTEM}" MATCHES "Linux")
 	find_package (Threads)
-	list(APPEND RedBoxApp_libraries_list ${CMAKE_THREAD_LIBS_INIT})
+	list(APPEND RedBoxApp_libraries_list ${CMAKE_THREAD_LIBS_INIT} dl)
 endif("${CMAKE_SYSTEM}" MATCHES "Linux")
 
 ADD_DEFINITIONS("-DSDL")
