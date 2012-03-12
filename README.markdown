@@ -1,5 +1,3 @@
-<!-- -*- markdown -*- -->
-
 RedBox Application Project
 ==========================
 *Version: Development snapshot*
