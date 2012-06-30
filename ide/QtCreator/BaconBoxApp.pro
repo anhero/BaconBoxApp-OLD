@@ -1,8 +1,8 @@
 # ========================================================================
-# =                           RedBox App                                 =
+# =                           BaconBox App                                 =
 # ========================================================================
 
-TARGET = RedBoxApp
+TARGET = BaconBoxApp
 TEMPLATE = app
 DEFINES = SDL
 DESTDIR = $$PWD/../../build/bin
@@ -34,19 +34,19 @@ PRE_TARGETDEPS += copyResourcesTarget
 # When using the package
 INCLUDEPATH +=  $$PWD/../../libraries/current/include
 # When in "developer-mode"
-INCLUDEPATH +=  $$PWD/../../libraries/redbox/build/Debug/include/
+INCLUDEPATH +=  $$PWD/../../libraries/BaconBox/build/Debug/include/
 
 # When using the package
 LIBS += -L$$PWD/../../libraries/current/lib/
 # When in "developer-mode"
-LIBS += -L$$PWD/../../libraries/redbox/build/lib/Debug/
+LIBS += -L$$PWD/../../libraries/baconbox/build/lib/Debug/
 
 macx {
-	INCLUDEPATH +=  $$PWD/../../libraries/redbox-osx/include
-	LIBS += -L$$PWD/../../libraries/redbox-osx/
+	INCLUDEPATH +=  $$PWD/../../libraries/baconbox-osx/include
+	LIBS += -L$$PWD/../../libraries/baconbox-osx/
 }
 
-LIBS += -lRedBox
+LIBS += -lBaconBox
 
 # ------------------------------------------------------------------------------
 # System dependencies
@@ -67,8 +67,8 @@ macx {
 	INCLUDEPATH += -I/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers
 	INCLUDEPATH += -I/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Carbon.framework/Headers
 
-	LIBS += -L/Users/alabranche/Development/redboxapp/libraries/current/lib
-	LIBS += -L/Users/alabranche/Development/redboxapp/libraries/redbox/build/lib/Debug
+	LIBS += -L/Users/alabranche/Development/baconboxapp/libraries/current/lib
+	LIBS += -L/Users/alabranche/Development/baconboxapp/libraries/baconbox/build/lib/Debug
 	LIBS += -framework Cocoa -framework AudioUnit -framework CoreAudio -framework AudioToolbox
 	LIBS += -framework IOKit -framework ForceFeedback -framework CoreFoundation
 	LIBS += -framework Carbon -framework AGL -framework OpenGL

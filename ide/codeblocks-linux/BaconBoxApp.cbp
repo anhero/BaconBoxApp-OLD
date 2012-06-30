@@ -2,14 +2,14 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="RedBoxApp" />
+		<Option title="BaconBoxApp" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="../../build/bin/Debug/RedBoxApp" prefix_auto="1" extension_auto="1" />
+				<Option output="../../build/bin/Debug/BaconBoxApp" prefix_auto="1" extension_auto="1" />
 				<Option object_output="../../build/obj/Debug/" />
-				<Option external_deps="../../libraries/current/lib/libRedBox.a;" />
+				<Option external_deps="../../libraries/current/lib/libBaconBox.a;" />
 				<Option type="0" />
 				<Option compiler="gcc" />
 				<Compiler>
@@ -22,7 +22,7 @@
 			<Add directory="../../libraries/current/include" />
 		</Compiler>
 		<Linker>
-			<Add library="../../libraries/current/lib/libRedBox.a" />
+			<Add library="../../libraries/current/lib/libBaconBox.a" />
 			<Add library="GL" />
 			<Add library="GLU" />
 			<Add library="SM" />
