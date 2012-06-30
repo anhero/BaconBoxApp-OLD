@@ -22,8 +22,6 @@
 		240489E914F2BA40001F8F61 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2404899614F2B655001F8F61 /* OpenGL.framework */; };
 		240489F414F2BAA2001F8F61 /* libBaconBox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2404897614F2B508001F8F61 /* libBaconBox.a */; };
 		2489A5E315047EC40032DE88 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2489A5C215047EAA0032DE88 /* main.cpp */; };
-		516F556715095FAB00EC093D /* QtCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 516F556515095FAB00EC093D /* QtCore.framework */; };
-		516F556815095FAB00EC093D /* QtGui.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 516F556615095FAB00EC093D /* QtGui.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,8 +74,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				516F556715095FAB00EC093D /* QtCore.framework in Frameworks */,
-				516F556815095FAB00EC093D /* QtGui.framework in Frameworks */,
 				240489F414F2BAA2001F8F61 /* libBaconBox.a in Frameworks */,
 				240489C714F2BA35001F8F61 /* Cocoa.framework in Frameworks */,
 				240489E114F2BA40001F8F61 /* Carbon.framework in Frameworks */,
