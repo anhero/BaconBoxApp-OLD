@@ -1,6 +1,6 @@
 #!/bin/bash
 
-_name="redbox"
+_name="baconbox"
 _license="LGPL" 
 
 _version="7d996592f52e"

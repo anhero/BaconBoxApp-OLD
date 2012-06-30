@@ -1,10 +1,11 @@
-RedBox Application Project
-==========================
+<!-- -*- markdown -*- -->
+
+BaconBox Application Project
 *Version: Development snapshot*
 
-This project is a template project to make a game using the RedBox Engine.
+This project is a template project to make a game using the BaconBox Engine.
 
-For any help, you can go to [the website](http://redboxengine.com), which is
+For any help, you can go to [the website](http://baconbox.net), which is
 the documentation website or you can use [our forums](http://anhero.net/forum/)
 and make your mark in the community.
 
@@ -13,7 +14,7 @@ report on [our bug tracker](http://bugs.anhero.net/).
 
 License information
 ===================
-For license details about RedBox, see the wiki or the license.txt file.
+For license details about BaconBox, see the wiki or the license.txt file.
 
 The example main.cpp file is released as either Public Domain or MIT License,
 whichever better fits your needs.
@@ -23,10 +24,10 @@ More details
 
 How to use
 ----------
-A release of this project should include the pre-built RedBox library and all
+A release of this project should include the pre-built BaconBox library and all
 the necessary components.
 
-To use the RedBox Engine with this project, you only need to find a project
+To use the BaconBox Engine with this project, you only need to find a project
 matching your favorite IDE in the ide folder. From there, you should only need
 to start coding and compiling using your IDE, nothing more.
 
@@ -37,7 +38,7 @@ Folder structure
 ----------------
 	/application/    -> Your game code goes there.
 	    main.cpp     -> Startup point of the program and configurations for
-	                    RedBox are made there.
+	                    BaconBox are made there.
 
 	/resources/      -> Your resources goes there. (e.g Sounds, Art, etc.)
 
@@ -50,4 +51,4 @@ Folder structure
 	                    named after the IDE.
 
 	/libraries/      -> This is where the local libraries are.
-	                    (generally this means RedBox and sigly)
+	                    (generally this means BaconBox and sigly)

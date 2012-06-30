@@ -1,0 +1,425 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		240489C714F2BA35001F8F61 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240489C614F2BA35001F8F61 /* Cocoa.framework */; };
+		240489D114F2BA35001F8F61 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 240489CF14F2BA35001F8F61 /* InfoPlist.strings */; };
+		240489D714F2BA35001F8F61 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 240489D514F2BA35001F8F61 /* Credits.rtf */; };
+		240489DD14F2BA36001F8F61 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 240489DB14F2BA36001F8F61 /* MainMenu.xib */; };
+		240489E114F2BA40001F8F61 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240489AC14F2B7D3001F8F61 /* Carbon.framework */; };
+		240489E214F2BA40001F8F61 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 240489AA14F2B770001F8F61 /* libiconv.dylib */; };
+		240489E314F2BA40001F8F61 /* ForceFeedback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240489A414F2B70C001F8F61 /* ForceFeedback.framework */; };
+		240489E414F2BA40001F8F61 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240489A214F2B6F7001F8F61 /* CoreAudio.framework */; };
+		240489E514F2BA40001F8F61 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240489A014F2B6E6001F8F61 /* IOKit.framework */; };
+		240489E614F2BA40001F8F61 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2404899E14F2B6BA001F8F61 /* AudioUnit.framework */; };
+		240489E714F2BA40001F8F61 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2404899A14F2B68D001F8F61 /* Foundation.framework */; };
+		240489E814F2BA40001F8F61 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2404899814F2B66E001F8F61 /* CoreFoundation.framework */; };
+		240489E914F2BA40001F8F61 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2404899614F2B655001F8F61 /* OpenGL.framework */; };
+		240489F414F2BAA2001F8F61 /* libBaconBox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2404897614F2B508001F8F61 /* libBaconBox.a */; };
+		2489A5E315047EC40032DE88 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2489A5C215047EAA0032DE88 /* main.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2404897514F2B508001F8F61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2404896E14F2B507001F8F61 /* BaconBox.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 240485CE14F2AE36001F8F61;
+			remoteInfo = BaconBox;
+		};
+		240489EC14F2BA5B001F8F61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2404896E14F2B507001F8F61 /* BaconBox.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 240485CD14F2AE36001F8F61;
+			remoteInfo = BaconBox;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2404896E14F2B507001F8F61 /* BaconBox.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BaconBox.xcodeproj; path = ../../../libraries/baconbox/ide/osx/BaconBox/BaconBox.xcodeproj; sourceTree = "<group>"; };
+		2404899614F2B655001F8F61 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		2404899814F2B66E001F8F61 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		2404899A14F2B68D001F8F61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2404899E14F2B6BA001F8F61 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		240489A014F2B6E6001F8F61 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		240489A214F2B6F7001F8F61 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		240489A414F2B70C001F8F61 /* ForceFeedback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ForceFeedback.framework; path = System/Library/Frameworks/ForceFeedback.framework; sourceTree = SDKROOT; };
+		240489A814F2B73E001F8F61 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		240489AA14F2B770001F8F61 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		240489AC14F2B7D3001F8F61 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		240489C314F2BA35001F8F61 /* BaconBoxApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaconBoxApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		240489C614F2BA35001F8F61 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		240489C914F2BA35001F8F61 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		240489CA14F2BA35001F8F61 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		240489CB14F2BA35001F8F61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		240489CE14F2BA35001F8F61 /* BaconBoxApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BaconBoxApp-Info.plist"; sourceTree = "<group>"; };
+		240489D014F2BA35001F8F61 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		240489D614F2BA35001F8F61 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		240489D814F2BA35001F8F61 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		240489D914F2BA35001F8F61 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		240489DC14F2BA36001F8F61 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		2489A5C215047EAA0032DE88 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		516F556515095FAB00EC093D /* QtCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtCore.framework; path = usr/local/lib/QtCore.framework; sourceTree = SDKROOT; };
+		516F556615095FAB00EC093D /* QtGui.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtGui.framework; path = usr/local/lib/QtGui.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		240489C014F2BA35001F8F61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				240489F414F2BAA2001F8F61 /* libBaconBox.a in Frameworks */,
+				240489C714F2BA35001F8F61 /* Cocoa.framework in Frameworks */,
+				240489E114F2BA40001F8F61 /* Carbon.framework in Frameworks */,
+				240489E214F2BA40001F8F61 /* libiconv.dylib in Frameworks */,
+				240489E314F2BA40001F8F61 /* ForceFeedback.framework in Frameworks */,
+				240489E414F2BA40001F8F61 /* CoreAudio.framework in Frameworks */,
+				240489E514F2BA40001F8F61 /* IOKit.framework in Frameworks */,
+				240489E614F2BA40001F8F61 /* AudioUnit.framework in Frameworks */,
+				240489E714F2BA40001F8F61 /* Foundation.framework in Frameworks */,
+				240489E814F2BA40001F8F61 /* CoreFoundation.framework in Frameworks */,
+				240489E914F2BA40001F8F61 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2404893A14F2B487001F8F61 = {
+			isa = PBXGroup;
+			children = (
+				2404896E14F2B507001F8F61 /* BaconBox.xcodeproj */,
+				2404895214F2B4B4001F8F61 /* application */,
+				2404895814F2B4B4001F8F61 /* resources */,
+				240489CC14F2BA35001F8F61 /* BaconBoxApp */,
+				240489C514F2BA35001F8F61 /* Frameworks */,
+				2404894614F2B487001F8F61 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2404894614F2B487001F8F61 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				240489C314F2BA35001F8F61 /* BaconBoxApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2404895214F2B4B4001F8F61 /* application */ = {
+			isa = PBXGroup;
+			children = (
+				2489A5C215047EAA0032DE88 /* main.cpp */,
+			);
+			name = application;
+			path = ../../../application;
+			sourceTree = "<group>";
+		};
+		2404895814F2B4B4001F8F61 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = resources;
+			path = ../../../resources;
+			sourceTree = "<group>";
+		};
+		2404896F14F2B507001F8F61 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2404897614F2B508001F8F61 /* libBaconBox.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		240489C514F2BA35001F8F61 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				516F556515095FAB00EC093D /* QtCore.framework */,
+				516F556615095FAB00EC093D /* QtGui.framework */,
+				240489AC14F2B7D3001F8F61 /* Carbon.framework */,
+				240489AA14F2B770001F8F61 /* libiconv.dylib */,
+				240489A814F2B73E001F8F61 /* Cocoa.framework */,
+				240489A414F2B70C001F8F61 /* ForceFeedback.framework */,
+				240489A214F2B6F7001F8F61 /* CoreAudio.framework */,
+				240489A014F2B6E6001F8F61 /* IOKit.framework */,
+				2404899E14F2B6BA001F8F61 /* AudioUnit.framework */,
+				2404899A14F2B68D001F8F61 /* Foundation.framework */,
+				2404899814F2B66E001F8F61 /* CoreFoundation.framework */,
+				2404899614F2B655001F8F61 /* OpenGL.framework */,
+				240489C614F2BA35001F8F61 /* Cocoa.framework */,
+				240489C814F2BA35001F8F61 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		240489C814F2BA35001F8F61 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				240489C914F2BA35001F8F61 /* AppKit.framework */,
+				240489CA14F2BA35001F8F61 /* CoreData.framework */,
+				240489CB14F2BA35001F8F61 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		240489CC14F2BA35001F8F61 /* BaconBoxApp */ = {
+			isa = PBXGroup;
+			children = (
+				240489D814F2BA35001F8F61 /* AppDelegate.h */,
+				240489D914F2BA35001F8F61 /* AppDelegate.m */,
+				240489DB14F2BA36001F8F61 /* MainMenu.xib */,
+				240489CD14F2BA35001F8F61 /* Supporting Files */,
+			);
+			path = BaconBoxApp;
+			sourceTree = "<group>";
+		};
+		240489CD14F2BA35001F8F61 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				240489CE14F2BA35001F8F61 /* BaconBoxApp-Info.plist */,
+				240489CF14F2BA35001F8F61 /* InfoPlist.strings */,
+				240489D514F2BA35001F8F61 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		240489C214F2BA35001F8F61 /* BaconBoxApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 240489DE14F2BA36001F8F61 /* Build configuration list for PBXNativeTarget "BaconBoxApp" */;
+			buildPhases = (
+				240489BF14F2BA35001F8F61 /* Sources */,
+				240489C014F2BA35001F8F61 /* Frameworks */,
+				240489C114F2BA35001F8F61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				240489ED14F2BA5B001F8F61 /* PBXTargetDependency */,
+			);
+			name = BaconBoxApp;
+			productName = BaconBoxApp;
+			productReference = 240489C314F2BA35001F8F61 /* BaconBoxApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2404893C14F2B487001F8F61 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Anhero Inc.";
+			};
+			buildConfigurationList = 2404893F14F2B487001F8F61 /* Build configuration list for PBXProject "BaconBoxApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2404893A14F2B487001F8F61;
+			productRefGroup = 2404894614F2B487001F8F61 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2404896F14F2B507001F8F61 /* Products */;
+					ProjectRef = 2404896E14F2B507001F8F61 /* BaconBox.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				240489C214F2BA35001F8F61 /* BaconBoxApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		2404897614F2B508001F8F61 /* libBaconBox.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libBaconBox.a;
+			remoteRef = 2404897514F2B508001F8F61 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		240489C114F2BA35001F8F61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				240489D114F2BA35001F8F61 /* InfoPlist.strings in Resources */,
+				240489D714F2BA35001F8F61 /* Credits.rtf in Resources */,
+				240489DD14F2BA36001F8F61 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		240489BF14F2BA35001F8F61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2489A5E315047EC40032DE88 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		240489ED14F2BA5B001F8F61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BaconBox;
+			targetProxy = 240489EC14F2BA5B001F8F61 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		240489CF14F2BA35001F8F61 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				240489D014F2BA35001F8F61 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		240489D514F2BA35001F8F61 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				240489D614F2BA35001F8F61 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		240489DB14F2BA36001F8F61 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				240489DC14F2BA36001F8F61 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2404894D14F2B487001F8F61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2404894E14F2B487001F8F61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		240489DF14F2BA36001F8F61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)/usr/local/lib\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				HEADER_SEARCH_PATHS = (
+					"\"$(BUILT_PRODUCTS_DIR)/include\"",
+					"\"$(SRCROOT)/../../../../../QtSDK/Desktop/Qt/474/gcc/include\"/**",
+					/usr/local/Cellar/qt/4.8.0/lib/QtGui.framework/Headers,
+				);
+				INFOPLIST_FILE = "BaconBoxApp/BaconBoxApp-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		240489E014F2BA36001F8F61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)/usr/local/lib\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				HEADER_SEARCH_PATHS = (
+					"\"$(BUILT_PRODUCTS_DIR)/include\"",
+					"\"$(SRCROOT)/../../../../../QtSDK/Desktop/Qt/474/gcc/include\"/**",
+					/usr/local/Cellar/qt/4.8.0/lib/QtGui.framework/Headers,
+				);
+				INFOPLIST_FILE = "BaconBoxApp/BaconBoxApp-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2404893F14F2B487001F8F61 /* Build configuration list for PBXProject "BaconBoxApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2404894D14F2B487001F8F61 /* Debug */,
+				2404894E14F2B487001F8F61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		240489DE14F2BA36001F8F61 /* Build configuration list for PBXNativeTarget "BaconBoxApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				240489DF14F2BA36001F8F61 /* Debug */,
+				240489E014F2BA36001F8F61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2404893C14F2B487001F8F61 /* Project object */;
+}

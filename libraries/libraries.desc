@@ -1,9 +1,9 @@
 #!/bin/bash
 #Libraries to build
 
-# If redbox is not available directly in libraries, we build it.
-if [[ ! -e redbox ]]; then
-	libraries=( ${libraries[@]-} 'redbox' )
+# If baconbox is not available directly in libraries, we build it.
+if [[ ! -e baconbox ]]; then
+	libraries=( ${libraries[@]-} 'baconbox' )
 fi
 
 libraries=( ${libraries[@]-} 'sigly' )
