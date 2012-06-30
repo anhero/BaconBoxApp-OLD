@@ -15,40 +15,40 @@
 		511276D812FF02FE008EAB02 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 511276D712FF02FE008EAB02 /* QuartzCore.framework */; };
 		511276DA12FF02FE008EAB02 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 511276D912FF02FE008EAB02 /* OpenGLES.framework */; };
 		512AD25113C62F54009D9324 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 512AD25013C62F54009D9324 /* main.cpp */; };
-		51C1F0DB13C66ACB00C2269A /* RedBoxApp-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 51C1F0DA13C66ACB00C2269A /* RedBoxApp-Info.plist */; };
-		51C1F1A213C74C8500C2269A /* libRedBox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C1F1A113C74C7C00C2269A /* libRedBox.a */; };
+		51C1F0DB13C66ACB00C2269A /* BaconBoxApp-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 51C1F0DA13C66ACB00C2269A /* BaconBoxApp-Info.plist */; };
+		51C1F1A213C74C8500C2269A /* libBaconBox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C1F1A113C74C7C00C2269A /* libBaconBox.a */; };
 		51C96A59132D459000A9B088 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C96A58132D459000A9B088 /* OpenAL.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		51C1F1A013C74C7C00C2269A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 51C1F19913C74C7C00C2269A /* RedBox.xcodeproj */;
+			containerPortal = 51C1F19913C74C7C00C2269A /* BaconBox.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 515EB50512FF34AA004FB469;
-			remoteInfo = RedBox;
+			remoteInfo = BaconBox;
 		};
 		51C1F1A313C74C8800C2269A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 51C1F19913C74C7C00C2269A /* RedBox.xcodeproj */;
+			containerPortal = 51C1F19913C74C7C00C2269A /* BaconBox.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 5192774611D5B0F100C65B15;
-			remoteInfo = RedBox;
+			remoteInfo = BaconBox;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5103332813326EB20097CD96 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		510C25D913019C7D00CFE26E /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		511276CD12FF02FE008EAB02 /* RedBoxApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedBoxApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		511276CD12FF02FE008EAB02 /* BaconBoxApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaconBoxApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		511276D112FF02FE008EAB02 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		511276D312FF02FE008EAB02 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		511276D512FF02FE008EAB02 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		511276D712FF02FE008EAB02 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		511276D912FF02FE008EAB02 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		512AD25013C62F54009D9324 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		51C1F0DA13C66ACB00C2269A /* RedBoxApp-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "RedBoxApp-Info.plist"; sourceTree = "<group>"; };
-		51C1F19913C74C7C00C2269A /* RedBox.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RedBox.xcodeproj; path = redbox/ide/ios/RedBox.xcodeproj; sourceTree = "<group>"; };
+		51C1F0DA13C66ACB00C2269A /* BaconBoxApp-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "BaconBoxApp-Info.plist"; sourceTree = "<group>"; };
+		51C1F19913C74C7C00C2269A /* BaconBox.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BaconBox.xcodeproj; path = baconbox/ide/ios/BaconBox.xcodeproj; sourceTree = "<group>"; };
 		51C96A56132D457100A9B088 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		51C96A58132D459000A9B088 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -58,7 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51C1F1A213C74C8500C2269A /* libRedBox.a in Frameworks */,
+				51C1F1A213C74C8500C2269A /* libBaconBox.a in Frameworks */,
 				5103332913326EB20097CD96 /* AVFoundation.framework in Frameworks */,
 				51C96A59132D459000A9B088 /* OpenAL.framework in Frameworks */,
 				510C25DA13019C7D00CFE26E /* libz.dylib in Frameworks */,
@@ -96,7 +96,7 @@
 		511276CE12FF02FE008EAB02 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				511276CD12FF02FE008EAB02 /* RedBoxApp.app */,
+				511276CD12FF02FE008EAB02 /* BaconBoxApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,24 +129,24 @@
 		5112773312FF1DF3008EAB02 /* libraries */ = {
 			isa = PBXGroup;
 			children = (
-				51589DAD12FF329C00834D4D /* redbox */,
+				51589DAD12FF329C00834D4D /* baconbox */,
 			);
 			name = libraries;
 			path = ../../libraries;
 			sourceTree = "<group>";
 		};
-		51589DAD12FF329C00834D4D /* redbox */ = {
+		51589DAD12FF329C00834D4D /* baconbox */ = {
 			isa = PBXGroup;
 			children = (
-				51C1F19913C74C7C00C2269A /* RedBox.xcodeproj */,
+				51C1F19913C74C7C00C2269A /* BaconBox.xcodeproj */,
 			);
-			name = redbox;
+			name = baconbox;
 			sourceTree = "<group>";
 		};
 		51C1F19A13C74C7C00C2269A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				51C1F1A113C74C7C00C2269A /* libRedBox.a */,
+				51C1F1A113C74C7C00C2269A /* libBaconBox.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -163,7 +163,7 @@
 		51DA4B9413C6522500EE1031 /* ios */ = {
 			isa = PBXGroup;
 			children = (
-				51C1F0DA13C66ACB00C2269A /* RedBoxApp-Info.plist */,
+				51C1F0DA13C66ACB00C2269A /* BaconBoxApp-Info.plist */,
 			);
 			path = ios;
 			sourceTree = "<group>";
@@ -181,9 +181,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		511276CC12FF02FD008EAB02 /* RedBoxApp */ = {
+		511276CC12FF02FD008EAB02 /* BaconBoxApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 511276F912FF02FE008EAB02 /* Build configuration list for PBXNativeTarget "RedBoxApp" */;
+			buildConfigurationList = 511276F912FF02FE008EAB02 /* Build configuration list for PBXNativeTarget "BaconBoxApp" */;
 			buildPhases = (
 				51FB253D1427AA5E009E7B4D /* libbuildtool */,
 				511276C912FF02FD008EAB02 /* Sources */,
@@ -196,9 +196,9 @@
 			dependencies = (
 				51C1F1A413C74C8800C2269A /* PBXTargetDependency */,
 			);
-			name = RedBoxApp;
-			productName = RedBoxApp;
-			productReference = 511276CD12FF02FE008EAB02 /* RedBoxApp.app */;
+			name = BaconBoxApp;
+			productName = BaconBoxApp;
+			productReference = 511276CD12FF02FE008EAB02 /* BaconBoxApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -209,7 +209,7 @@
 			attributes = {
 				ORGANIZATIONNAME = "Anhero Inc.";
 			};
-			buildConfigurationList = 511276C712FF02FD008EAB02 /* Build configuration list for PBXProject "RedBoxApp" */;
+			buildConfigurationList = 511276C712FF02FD008EAB02 /* Build configuration list for PBXProject "BaconBoxApp" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -222,21 +222,21 @@
 			projectReferences = (
 				{
 					ProductGroup = 51C1F19A13C74C7C00C2269A /* Products */;
-					ProjectRef = 51C1F19913C74C7C00C2269A /* RedBox.xcodeproj */;
+					ProjectRef = 51C1F19913C74C7C00C2269A /* BaconBox.xcodeproj */;
 				},
 			);
 			projectRoot = "";
 			targets = (
-				511276CC12FF02FD008EAB02 /* RedBoxApp */,
+				511276CC12FF02FD008EAB02 /* BaconBoxApp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		51C1F1A113C74C7C00C2269A /* libRedBox.a */ = {
+		51C1F1A113C74C7C00C2269A /* libBaconBox.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = libRedBox.a;
+			path = libBaconBox.a;
 			remoteRef = 51C1F1A013C74C7C00C2269A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -247,7 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51C1F0DB13C66ACB00C2269A /* RedBoxApp-Info.plist in Resources */,
+				51C1F0DB13C66ACB00C2269A /* BaconBoxApp-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +285,7 @@
 /* Begin PBXTargetDependency section */
 		51C1F1A413C74C8800C2269A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = RedBox;
+			name = BaconBox;
 			targetProxy = 51C1F1A313C74C8800C2269A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -304,7 +304,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "xcode_specific/RedBoxApp-Info.plist";
+				INFOPLIST_FILE = "xcode_specific/BaconBoxApp-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -322,7 +322,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "xcode_specific/RedBoxApp-Info.plist";
+				INFOPLIST_FILE = "xcode_specific/BaconBoxApp-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
@@ -340,7 +340,7 @@
 				GCC_PREFIX_HEADER = "";
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/include\"";
-				INFOPLIST_FILE = "../../platform/ios/RedBoxApp-Info.plist";
+				INFOPLIST_FILE = "../../platform/ios/BaconBoxApp-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
@@ -356,7 +356,7 @@
 				GCC_PREFIX_HEADER = "";
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/include\"";
-				INFOPLIST_FILE = "../../platform/ios/RedBoxApp-Info.plist";
+				INFOPLIST_FILE = "../../platform/ios/BaconBoxApp-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "";
 				VALIDATE_PRODUCT = YES;
@@ -367,7 +367,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		511276C712FF02FD008EAB02 /* Build configuration list for PBXProject "RedBoxApp" */ = {
+		511276C712FF02FD008EAB02 /* Build configuration list for PBXProject "BaconBoxApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				511276F712FF02FE008EAB02 /* Debug */,
@@ -376,7 +376,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		511276F912FF02FE008EAB02 /* Build configuration list for PBXNativeTarget "RedBoxApp" */ = {
+		511276F912FF02FE008EAB02 /* Build configuration list for PBXNativeTarget "BaconBoxApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				511276FA12FF02FE008EAB02 /* Debug */,
