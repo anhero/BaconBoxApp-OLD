@@ -1,10 +1,8 @@
-syntax: glob
-
 Makefile
 Icon?
 
 #Generated Doc
-glob:meta/documentation/generated/
+meta/documentation/generated/
 
 #Mac OSX file
 .DS_Store
@@ -27,7 +25,6 @@ build
 *.framework
 *.orig
 
-
 #Windows file
 Thumbs.db
 
@@ -42,8 +39,6 @@ Release
 #/obj/*
 #/bin/*
 
-#libbuildtool ignore rules
-regexp:^libraries/.*/.*$
 
 #vim-style save file
 *~
@@ -51,5 +46,5 @@ regexp:^libraries/.*/.*$
 #SVN repo add to our project
 .svn
 
-glob:libraries/redbox
-glob:libraries/current
+libraries/*
+!libraries/*.desc
