@@ -365,6 +365,7 @@
 					"\"$(BUILT_PRODUCTS_DIR)/include\"",
 					"\"$(SRCROOT)/../../../../../QtSDK/Desktop/Qt/474/gcc/include\"/**",
 					/usr/local/Cellar/qt/4.8.0/lib/QtGui.framework/Headers,
+					"\"$(SRCROOT)/../../../libraries/baconbox/BaconBox\"/**",
 				);
 				INFOPLIST_FILE = "BaconBoxApp/BaconBoxApp-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
@@ -386,6 +387,7 @@
 					"\"$(BUILT_PRODUCTS_DIR)/include\"",
 					"\"$(SRCROOT)/../../../../../QtSDK/Desktop/Qt/474/gcc/include\"/**",
 					/usr/local/Cellar/qt/4.8.0/lib/QtGui.framework/Headers,
+					"\"$(SRCROOT)/../../../libraries/baconbox/BaconBox\"/**",
 				);
 				INFOPLIST_FILE = "BaconBoxApp/BaconBoxApp-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
